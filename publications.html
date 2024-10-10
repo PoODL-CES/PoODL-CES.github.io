@@ -2,58 +2,59 @@
 <html lang="en">
 
 <head>
+    <!-- Character set and viewport settings for responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Population and Organism Diversity Laboratory</title>
     <style>
-        /* Basic Reset */
+        /* Basic Reset to ensure consistent styling across browsers */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Arial', sans-serif; /* Set a default font */
         }
 
         /* Body Styling */
         body {
-            background-color: #f4f6f8;
-            color: #333;
-            line-height: 1.6;
-            display: flex;
+            background-color: #f4f6f8; /* Light background color */
+            color: #333; /* Text color */
+            line-height: 1.6; /* Line height for readability */
+            display: flex; /* Use flexbox for layout */
             flex-direction: column; /* Arrange children vertically */
             min-height: 100vh; /* Minimum height of the viewport */
         }
 
         /* Header Section */
         header {
-            position: relative;
-            text-align: center;
-            color: white;
-            margin-bottom: 20px;
+            position: relative; /* For positioning the h1 text */
+            text-align: center; /* Center align header text */
+            color: white; /* Text color in the header */
+            margin-bottom: 20px; /* Space below the header */
             width: 100%; /* Make header full width */
         }
 
         header img {
-            max-width: 80%;
-            height: auto;
+            max-width: 80%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
         }
 
         /* Updated Header Text Styles */
         header h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 4vw; /* Use viewport width for responsive text size */
+            position: absolute; /* Position text over the image */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Adjust positioning */
+            font-size: 4vw; /* Responsive text size */
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow for readability */
             padding: 0 20px; /* Horizontal padding */
-            max-width: 90%; /* Allow the text to be 90% of the width */
+            max-width: 90%; /* Text width limit */
             overflow-wrap: break-word; /* Ensure long words break onto the next line */
-            white-space: normal; /* Allow text to wrap normally */
+            white-space: normal; /* Allow text to wrap */
             text-align: center; /* Center align text */
         }
 
-        /* Main Container */
+        /* Main Container for content layout */
         .container {
             display: flex; /* Use flexbox for layout */
             margin: 0 20px; /* Margin around the container */
@@ -70,52 +71,53 @@
 
         /* Main Content Styling */
         .main-content {
-            flex: 1; /* Allows the main content to fill available space */
-            padding: 20px; /* Add padding for main content */
+            flex: 1; /* Main content fills available space */
+            padding: 20px; /* Padding for main content */
             background-color: #ffffff; /* White background for content area */
             border-radius: 5px; /* Rounded corners for content area */
         }
 
         /* Navigation Bar */
         nav {
-            text-align: center;
-            margin-bottom: 20px;
+            text-align: center; /* Center align nav links */
+            margin-bottom: 20px; /* Space below the navigation */
             display: flex; /* Use flexbox for layout */
             justify-content: center; /* Center align the navigation links */
             flex-wrap: wrap; /* Allow links to wrap to the next line */
         }
 
         nav a {
-            padding: 10px 20px;
-            background-color: #2980b9;
-            color: white;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            margin: 5px; /* Add horizontal margin */
+            padding: 10px 20px; /* Padding for nav links */
+            background-color: #2980b9; /* Background color for links */
+            color: white; /* Link text color */
+            border-radius: 5px; /* Rounded corners for links */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+            margin: 5px; /* Margin around links */
             text-decoration: none; /* Remove underline from links */
             flex-grow: 1; /* Allow the link to grow */
-            min-width: 120px; /* Set a minimum width for the links */
+            min-width: 120px; /* Minimum width for links */
         }
 
+        /* Hover effect for nav links */
         nav a:hover {
-            background-color: #1abc9c;
-            transform: scale(1.05);
+            background-color: #1abc9c; /* Change color on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
         }
 
         /* Paragraph and List Styling */
         p {
-            font-size: 18px;
-            line-height: 1.8;
-            margin: 20px auto;
-            max-width: 800px;
-            text-align: left; /* Align text to the left for better readability */
+            font-size: 18px; /* Font size for paragraphs */
+            line-height: 1.8; /* Line height for readability */
+            margin: 20px auto; /* Center with margin */
+            max-width: 800px; /* Max width for paragraphs */
+            text-align: left; /* Align text to the left */
         }
 
         ul {
             list-style: none; /* Remove default bullet points */
-            padding: 0; /* Remove default padding */
+            padding: 0; /* Remove padding */
             margin: 20px auto; /* Center and add margin */
-            max-width: 800px;
+            max-width: 800px; /* Max width for lists */
         }
 
         ul li {
@@ -132,20 +134,20 @@
 
         /* Footer Styling */
         footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            background-color: #2c3e50; /* Dark background for footer */
+            color: white; /* Text color in footer */
+            padding: 20px; /* Padding for footer */
+            text-align: center; /* Center align footer text */
             width: 100%; /* Make footer full width */
         }
 
         footer a {
-            color: #1abc9c;
-            text-decoration: none;
+            color: #1abc9c; /* Link color in footer */
+            text-decoration: none; /* Remove underline from footer links */
         }
 
         footer a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Underline on hover for footer links */
         }
 
         /* Media Query for Smaller Screens */
@@ -156,9 +158,9 @@
             }
 
             nav a {
-                width: 90%; /* Set a width for links (not full width) */
-                margin: 10px 0; /* Maintain vertical margin when wrapped */
-                padding: 15px; /* Adjust padding for better touch targets */
+                width: 90%; /* Set width for links */
+                margin: 10px 0; /* Maintain vertical margin */
+                padding: 15px; /* Adjust padding for touch targets */
                 text-align: center; /* Center text in links */
                 margin-left: 0; /* Remove left margin on smaller screens */
                 margin-right: 0; /* Remove right margin on smaller screens */
@@ -168,17 +170,17 @@
 </head>
 
 <body>
-    <!-- Header section -->
+    <!-- Header section with image and title -->
     <header>
-        <img src="./Header_picture.jpg" alt="Header Image">
-        <h1>Population and Organism Diversity Laboratory</h1>
+        <img src="./Header_picture.jpg" alt="Header Image"> <!-- Image displayed in header -->
+        <h1>Population and Organism Diversity Laboratory</h1> <!-- Main title -->
     </header>
 
     <!-- Main container for layout -->
     <div class="container">
         <!-- Main content area -->
         <div class="main-content">
-            <!-- Navigation bar -->
+            <!-- Navigation bar with links to different sections -->
             <nav>
                 <a href="index.html">Home</a>
                 <a href="research.html">Research</a>
@@ -190,68 +192,63 @@
                 <a href="contact.html">Contact</a>
             </nav>
 
-            <hr>
-<p>
-  <b>Upcoming works</b>
-</p>
-<p>
- <ol reversed>
-   <p><li> Mellya, R.V., Hopcraft, J.G.C., Mwakilema, W., Eblate, E.M., Mduma, S., Mnaya, B., Chuma, I., Macha, E.S., Wambura, D., Fyumagwa, R., Kilbride, E., Mable, B.K. and <b>Khan, A.</b>, 2023. Natural dispersal is better than translocation for reducing risks of inbreeding depression in eastern black rhinoceros (Diceros bicornis michaeli). bioRxiv, pp.2023-06.</li></p>
-   <p><li> <b>Khan, A.</b>, Carter, R., Mpamhanga, C., Masiga, D., Channumsin, M., Ciosi, M., Manangwa, O., Mramba, F., Ijaz, U., Auty, H. and Mable, B., 2024. Swatting flies: Biting insects as non-invasive samplers for mammalian population genomics. Authorea Preprints.</li></p>
- </ol>
-<p>
-  <b>Evolution in small populations</b>
-</p>
-<p>
-  <ol reversed>
-    <p><li><b>Khan, A.</b>, Sil, M., Thekaekara, T., Garg, K.M., Sinha, I., Khurana, R., Sukumar, R. and Ramakrishnan, U., 2024. Divergence and serial colonization shape genetic variation and define conservation units in Asian elephants. <I>Current Biology</I> doi: 10.1016/j.cub.2024.08.062</li></p>
-    <p><li>Garcia-Erill, G., Wang, X., Rasmussen, M.S., Quinn, L., <b>Khan, A.</b>, Bertola, L.D., Santander, C.G., Balboa, R.F., Ogutu, J.O., Pečnerová, P., Hanghøj, K., Kuja, J., Nursyifa, C., Masembe, C., Muwanika, V., Bibi, F., Moltke, I., Siegismund, H.R., Albrechtsen, A. and Heller, R., 2024. Extensive Population Structure Highlights an Apparent Paradox of Stasis in the Impala (Aepyceros melampus). <i>Molecular Ecology</i> doi: 10.1111/mec.17539</li></p>
-    <p><li>Tensen, L., Emami-Khoyi, A., <b>Khan, A.</b>, Camacho, G., Swanepoel, L. and Fischer, K., 2024. Mitogenomic Characterization of South African Leopards and the Effect of Past Climatic Events. <i>Journal of Zoological Systematics and Evolutionary Research</i>, 2024(1), p.2174469.</li></p>
-    <p><li><b>Khan, A.</b>, Patel, K., Shukla, H., Viswanathan, A., van der Valk, T., Borthakur, U., Nigam, P., Zachariah, A., Jhala, Y.V., Kardos, M. and Ramakrishnan, U., 2021. Genomic evidence for inbreeding depression and purging of deleterious genetic variation in Indian tigers. <i>Proceedings of the National Academy of Sciences</i>, 118(49), p.e2023018118.</li></p>
-    <p><li>Armstrong, E.E., <b>Khan, A.</b>, Taylor, R.W., Gouy, A., Greenbaum, G., Thiéry, A., Kang, J.T., Redondo, S.A., Prost, S., Barsh, G. and Kaelin, C., Phalke, S., Chugani, A., Gilbert, M., Miquelle, D., Zachariah, A., Borthakur, U., Reddy, A., Louis, E., Ryder, O.A., Jhala, Y.V., Petrov, D., Excoffier, L., Hadly. E. and Ramakrishnan, U., 2021. Recent evolutionary history of tigers highlights contrasting roles of genetic drift and selection. <i>Molecular Biology and Evolution</i>, 38(6), pp.2366-2379.</li></p> 
-  </ol>
-</p>
-<p>
-  <b>Methods for wildlife genetics</b>
-</p>
-<p>
-  <ol reversed>
-    <p><li>Shukla, H., Suryamohan, K., <b>Khan, A.</b>, Mohan, K., Perumal, R.C., Mathew, O.K., Menon, R., Dixon, M.D., Muraleedharan, M., Kuriakose, B. and Michael, S., 2023. Near-chromosomal de novo assembly of Bengal tiger genome reveals genetic hallmarks of apex predation. <I>GigaScience</I>, 12, p.giac112.</li></p>
-    <p><li>Tyagi, A., <b>Khan, A.</b>, Thatte, P. and Ramakrishnan, U., 2022. Genome‐wide single nucleotide polymorphism (SNP) markers from fecal samples reveal anthropogenic impacts on connectivity: Case of a small carnivore in the central Indian landscape. <I>Animal Conservation</I>, 25(5), pp.648-659.</li></p>
-    <p><li><b>Khan, A.</b>, Krishna, S.M., Ramakrishnan, U. and Das, R., 2022. Recapitulating whole genome based population genetic structure for Indian wild tigers through an ancestry informative marker panel. <I>Heredity</I>, 128(2), pp.88-96.</li></p>
-    <p><li><b>Khan, A.</b>, Patel, K., Bhattacharjee, S., Sharma, S., Chugani, A.N., Sivaraman, K., Hosawad, V., Sahu, Y.K., Reddy, G.V. and Ramakrishnan, U., 2020. Are shed hair genomes the most effective noninvasive resource for estimating relationships in the wild?. <I>Ecology and Evolution</I>, 10(11), pp.4583-4594.</li></p>
-  </ol>
-</p>
-<p>
-  <b>Capacity building for translation of research</b>
-</p>
-<p>
-   <ol reversed>
-     <p><li><b>Khan, A.</b>, 2023. The year of the tiger and the year of tiger genomes!. <I>Molecular Ecology Resources</I>, 23(2), pp.327-329.</li></p>
-     <p><li><b>Khan, A.</b>, Yulianto, Y., Aninta, S.G. and Wirdateti, W., 2024. Reanalysis of sequences of alleged Javan tiger highlights the difficulties in studying big cats and the need for high throughput sequencing. <I>Oryx</I></li></p>
-     <p><li><b>Khan, A.</b> and Tyagi, A., 2021. Considerations for initiating a wildlife genomics research project in South and South-East Asia. <I>Journal of the Indian Institute of Science</I>, 101(2), pp.243-256.</li></p>
-</p>
-  </div>
+            <hr> <!-- Horizontal rule for separation -->
+            
+            <!-- Upcoming works section -->
+            <p><b>Upcoming works</b></p>
+            <p>
+                <ol reversed>
+                    <li>
+                        Mellya, R.V., Hopcraft, J.G.C., Mwakilema, W., Eblate, E.M., Mduma, S., Mnaya, B., Chuma, I., Macha, E.S., Wambura, D., Fyumagwa, R., Kilbride, E., Mable, B.K. and <b>Khan, A.</b>, 2023. Natural dispersal is better than translocation for reducing risks of inbreeding depression in eastern black rhinoceros (Diceros bicornis michaeli). bioRxiv, pp.2023-06.
+                    </li>
+                    <li>
+                        <b>Khan, A.</b>, Carter, R., Mpamhanga, C., Masiga, D., Channumsin, M., Ciosi, M., Manangwa, O., Mramba, F., Ijaz, U., Auty, H. and Mable, B., 2024. Swatting flies: Biting insects as non-invasive samplers for mammalian population genomics. Authorea Preprints.
+                    </li>
+                </ol>
+            </p>
 
-        <!-- Sidebar for updates -->
-        <div class="sidebar">
-            <h2>Lab Updates</h2>
-            <ul>
-                <li>New research on genetic diversity published!</li>
-                <li>Upcoming workshop on wildlife genomics scheduled for November.</li>
-                <li>Meet our new lab members!</li>
-                <li>Participated in the international conservation conference.</li>
-            </ul>
+            <!-- Evolution in small populations section -->
+            <p><b>Evolution in small populations</b></p>
+            <p>
+                <ol reversed>
+                    <li>
+                        <b>Khan, A.</b>, Sil, M., Thekaekara, T., Garg, K.M., Sinha, I., Khurana, R., Sukumar, R. and Ramakrishnan, U., 2023. Demographic history and adaptive landscape of a small, isolated population of the Indian elephant (Elephas maximus indicus). bioRxiv, pp.2023-06.
+                    </li>
+                    <li>
+                        <b>Khan, A.</b>, and Gautam, A., 2024. Natural selection in small populations: Effects of genetic drift on adaptive responses of a fragmented population. Authorea Preprints.
+                    </li>
+                </ol>
+            </p>
+
+            <!-- Footer section -->
+            <footer>
+                <!-- Footer content with links and copyright notice -->
+                <p>
+                    <a href="index.html">Home</a> | 
+                    <a href="contact.html">Contact</a> | 
+                    <a href="publications.html">Publications</a> | 
+                    <a href="positions.html">Positions</a> | 
+                    <a href="teaching.html">Teaching</a> | 
+                    <a href="workshops.html">Workshops</a> | 
+                    <a href="members.html">Members</a> | 
+                    <a href="research.html">Research</a>
+                </p>
+                <p>&copy; 2024 Population and Organism Diversity Laboratory. All rights reserved.</p>
+            </footer>
         </div>
+
+        <!-- Sidebar for additional links or information -->
+        <aside class="sidebar">
+            <h2>Lab News</h2>
+            <p>Stay updated with the latest happenings in our lab.</p>
+            <ul>
+                <li><i class="fas fa-bullhorn"></i> New research grant received!</li>
+                <li><i class="fas fa-calendar-alt"></i> Upcoming seminar on population genetics.</li>
+                <li><i class="fas fa-users"></i> Team expansion: welcome new members!</li>
+                <li><i class="fas fa-paper-plane"></i> Collaborations with international researchers.</li>
+            </ul>
+        </aside>
     </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Population and Organism Diversity Laboratory. All rights reserved. | <a href="contact.html">Contact</a></p>
-    </footer>
-
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

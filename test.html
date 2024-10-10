@@ -86,8 +86,10 @@
             color: white;
             border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            margin: 0 5px; /* Horizontal margin between links */
+            margin: 5px 0; /* Use vertical margins only */
             text-decoration: none; /* Remove underline from links */
+            flex-grow: 1; /* Allow the link to grow */
+            min-width: 120px; /* Set a minimum width for the links */
         }
 
         nav a:hover {
@@ -155,7 +157,6 @@
                 margin: 10px 0; /* Add vertical margin to ensure spacing when wrapped */
                 padding: 15px; /* Adjust padding for better touch targets */
                 text-align: center; /* Center text in links */
-                display: block; /* Make links block elements to respect margins */
             }
         }
     </style>
@@ -165,7 +166,7 @@
     <!-- Header section -->
     <header>
         <img src="./Header_picture.jpg" alt="Header Image">
-        <h1>Population and Organism Diversity Laboratory.</h1>
+        <h1>Population and Organism Diversity Laboratory</h1>
     </header>
 
     <!-- Main container for layout -->
@@ -216,19 +217,4 @@
                 We also develop resources, tools, and techniques for genetic investigations of rare elusive species. We optimize methods for sequencing genomes from non-invasive and environmental samples.
             </p>
             <p>
-                Additionally, we ensure that the advances in wildlife genomic research are getting translated into on-ground management by conducting population genomics workshops across the tropics. Find the next scheduled workshop <a href="workshops.html">here.</a>
-            </p>
-        </div>
-    </div>
-
-    <!-- Footer section -->
-    <footer>
-        <p>© 2024 Population and Organism Diversity Laboratory. All rights reserved.</p>
-        <a href="mailto:labemail@domain.com">Contact Us</a>
-    </footer>
-
-    <!-- Font Awesome script for using icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
+                Additionally, we ensure that the advances in wildlife genomic research are getting translated into on-ground management by conducting population genomics workshops across the tropics. Find

@@ -52,7 +52,7 @@
             white-space: normal; /* Allow text to wrap normally */
             text-align: center; /* Center align text */
         }
-        
+
         /* Main Container */
         .container {
             display: flex; /* Use flexbox for layout */
@@ -66,6 +66,8 @@
             padding: 20px; /* Padding for content */
             margin-left: 20px; /* Space between sidebar and main content */
             border-radius: 5px; /* Rounded corners for sidebar */
+            flex-shrink: 0; /* Prevent the sidebar from shrinking */
+            position: relative; /* Position relative to maintain stacking context */
         }
 
         /* Main Content Styling */
@@ -110,11 +112,13 @@
             max-width: 800px;
             text-align: left; /* Align text to the left for better readability */
         }
-       h2, h3 {
+
+        h2, h3 {
             margin: 20px auto;
             max-width: 800px;
             text-align: left; /* Align text to the left for better readability */
         }
+
         ul {
             list-style: none; /* Remove default bullet points */
             padding: 0; /* Remove default padding */
@@ -169,6 +173,16 @@
                 text-align: center; /* Center text in links */
                 margin-left: 0; /* Remove left margin on smaller screens */
                 margin-right: 0; /* Remove right margin on smaller screens */
+            }
+
+            .container {
+                flex-direction: column; /* Stack the main content and sidebar on smaller screens */
+                align-items: center; /* Center align the content */
+            }
+
+            .sidebar {
+                margin-left: 0; /* Remove left margin on smaller screens */
+                width: 100%; /* Set sidebar width to full on smaller screens */
             }
         }
     </style>
@@ -230,7 +244,7 @@
             </p>
         </div>
 
-        <!-- Sidebar for updates, moved below the hr -->
+        <!-- Sidebar for updates -->
         <div class="sidebar">
             <h2>Lab Updates</h2>
             <ul>

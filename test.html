@@ -45,7 +45,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 5vw; /* Use viewport width for responsive text size */
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Keep text shadow for readability */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow for readability */
             padding: 0 20px; /* Horizontal padding */
             max-width: 90%; /* Allow the text to be 90% of the width */
             overflow-wrap: break-word; /* Ensure long words break onto the next line */
@@ -55,7 +55,8 @@
 
         /* Main Container */
         .container {
-            display: flex; /* Flexbox for layout */
+            display: flex; /* Use flexbox for layout */
+            flex-direction: row-reverse; /* Move the sidebar to the right */
             flex: 1; /* Allows the container to grow and fill available space */
             margin: 0 20px; /* Margin around the container */
         }
@@ -65,7 +66,7 @@
             width: 250px; /* Fixed width for sidebar */
             background-color: #ecf0f1; /* Light gray background */
             padding: 20px; /* Padding for content */
-            margin-right: 20px; /* Space between sidebar and main content */
+            margin-left: 20px; /* Space between sidebar and main content */
             border-radius: 5px; /* Rounded corners for sidebar */
         }
 
@@ -172,22 +173,11 @@
     <!-- Header section -->
     <header>
         <img src="./Header_picture.jpg" alt="Header Image">
-        <h1>Population and Organism Diversity Laboratory.</h1>
+        <h1>Population and Organism Diversity Laboratory</h1>
     </header>
 
     <!-- Main container for layout -->
     <div class="container">
-        <!-- Sidebar for updates -->
-        <div class="sidebar">
-            <h2>Lab Updates</h2>
-            <ul>
-                <li>New research on genetic diversity published!</li>
-                <li>Upcoming workshop on wildlife genomics scheduled for November.</li>
-                <li>Meet our new lab members!</li>
-                <li>Participated in the international conservation conference.</li>
-            </ul>
-        </div>
-
         <!-- Main content area -->
         <div class="main-content">
             <!-- Navigation bar -->
@@ -225,6 +215,17 @@
             <p>
                 Additionally, we ensure that the advances in wildlife genomic research are getting translated into on-ground management by conducting population genomics workshops across the tropics. Find the next scheduled workshop <a href="workshops.html">here.</a>
             </p>
+        </div>
+
+        <!-- Sidebar for updates -->
+        <div class="sidebar">
+            <h2>Lab Updates</h2>
+            <ul>
+                <li>New research on genetic diversity published!</li>
+                <li>Upcoming workshop on wildlife genomics scheduled for November.</li>
+                <li>Meet our new lab members!</li>
+                <li>Participated in the international conservation conference.</li>
+            </ul>
         </div>
     </div>
 

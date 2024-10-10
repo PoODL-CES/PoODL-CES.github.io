@@ -19,7 +19,9 @@
             background-color: #f4f6f8;
             color: #333;
             line-height: 1.6;
-            display: flex; /* Use flexbox to create layout */
+            display: flex;
+            flex-direction: column; /* Arrange children vertically */
+            min-height: 100vh; /* Minimum height of the viewport */
         }
 
         /* Header Section */
@@ -48,7 +50,7 @@
         /* Main Container */
         .container {
             display: flex; /* Flexbox for layout */
-            flex: 1; /* Allows the container to grow */
+            flex: 1; /* Allows the container to grow and fill available space */
         }
 
         /* Sidebar Styling */
@@ -122,9 +124,7 @@
             color: white;
             padding: 20px;
             text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            width: 100%; /* Make footer full width */
         }
 
         footer a {
@@ -176,35 +176,4 @@
 
             <!-- Main content paragraphs -->
             <p>
-                In the Population and Organism Diversity Lab at the Centre for Ecological Sciences (CES), Indian Institute of Science, we study the diversity of populations of the species around us. We are especially interested in understanding how small populations survive or go extinct.
-            </p>
-            <p>
-                We conduct simulations and empirical studies on populations of wild animals to try and understand.
-            </p>
-
-            <!-- Unordered list with icons -->
-            <ul>
-                <li><i class="fas fa-paw"></i> How do small isolated populations survive?</li>
-                <li><i class="fas fa-leaf"></i> How do we design survival strategies?</li>
-                <li><i class="fas fa-dna"></i> Does genomic variation translate to phenotypic variation?</li>
-            </ul>
-
-            <p>
-                We also develop resources, tools, and techniques for genetic investigations of rare elusive species. We optimize methods for sequencing genomes from non-invasive and environmental samples.
-            </p>
-            <p>
-                Additionally, we ensure that the advances in wildlife genomic research are getting translated into on-ground management by conducting population genomics workshops across the tropics. Find the next scheduled workshop <a href="workshops.html">here.</a>
-            </p>
-        </div>
-    </div>
-
-    <!-- Footer section -->
-    <footer>
-        <p>© 2024 Population and Organism Diversity Laboratory. All rights reserved.</p>
-        <a href="mailto:labemail@domain.com">Contact Us</a>
-    </footer>
-
-    <!-- Font Awesome script for using icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</body>
-</html>
+                In the Population and Organism Diversity Lab at the Centre for Ecological Sciences (CES), Indian Instit

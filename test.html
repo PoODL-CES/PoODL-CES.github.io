@@ -44,20 +44,21 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 48px;
+            font-size: 6vw; /* Use viewport width for responsive text size */
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Keep text shadow for readability */
             padding: 0 10px; /* Add horizontal padding */
             max-width: 90%; /* Limit width to 90% of the container */
             overflow: hidden; /* Prevent overflow of shadow */
+            text-align: center; /* Center text alignment */
             white-space: normal; /* Allow wrapping on smaller screens */
         }
 
         /* Media Query for Smaller Screens */
         @media (max-width: 600px) {
             header h1 {
-                font-size: 32px; /* Adjust font size for smaller screens */
+                font-size: 8vw; /* Use a larger viewport size on smaller screens */
                 padding: 0 5px; /* Add padding to prevent spilling */
-                max-width: 80%; /* Limit width further on smaller screens */
+                max-width: 90%; /* Limit width further on smaller screens */
                 white-space: normal; /* Allow wrapping on smaller screens */
             }
         }
@@ -181,7 +182,7 @@
     <!-- Header section -->
     <header>
         <img src="./Header_picture.jpg" alt="Header Image">
-        <h1>Population and Organism Diversity Laboratory.</h1>
+        <h1>Population and Organism Diversity Laboratory</h1>
     </header>
 
     <!-- Main container for layout -->
@@ -241,6 +242,9 @@
     <footer>
         <p>&copy; 2024 Population and Organism Diversity Laboratory. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
     </footer>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

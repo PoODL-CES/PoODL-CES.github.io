@@ -1,174 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Character set and viewport for responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Population and Organism Diversity Laboratory</title>
     <style>
-        /* Basic Reset: Ensures all elements have a consistent margin and padding */
+        /* Basic Reset */
         * {
-            box-sizing: border-box; /* Ensures padding and borders are included in total width/height */
-            margin: 0; /* Resets default margin */
-            padding: 0; /* Resets default padding */
-            font-family: 'Arial', sans-serif; /* Sets a default font for the page */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
         }
 
         /* Body Styling */
         body {
-            background-color: #f4f6f8; /* Light gray background color */
-            color: #333; /* Dark gray text color for readability */
-            line-height: 1.6; /* Improves spacing between lines of text */
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex; /* Use flexbox to create layout */
         }
 
-        /* Header Section: Includes the header image and title */
+        /* Header Section */
         header {
-            position: relative; /* Allows absolute positioning of the title within the header */
-            text-align: center; /* Centers text within the header */
-            color: white; /* White text color for the title */
-            margin-bottom: 20px; /* Space below the header */
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+            width: 100%; /* Make header full width */
         }
 
-        /* Styling for the header image */
         header img {
-            max-width: 100%; /* Makes the image responsive */
-            height: auto; /* Maintains aspect ratio of the image */
+            max-width: 100%;
+            height: auto;
         }
 
-        /* Title styling */
         header h1 {
-            position: absolute; /* Positions the title on top of the image */
-            top: 50%; /* Vertically centers the title */
-            left: 50%; /* Horizontally centers the title */
-            transform: translate(-50%, -50%); /* Adjusts position to exactly center */
-            font-size: 48px; /* Font size of the title */
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow for better visibility */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Main Container */
+        .container {
+            display: flex; /* Flexbox for layout */
+            flex: 1; /* Allows the container to grow */
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 250px; /* Fixed width for sidebar */
+            background-color: #ecf0f1; /* Light gray background */
+            padding: 20px; /* Padding for content */
+            margin-right: 20px; /* Space between sidebar and main content */
+            border-radius: 5px; /* Rounded corners for sidebar */
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            flex: 1; /* Allows the main content to fill available space */
         }
 
         /* Navigation Bar */
         nav {
-            text-align: center; /* Centers navigation links */
-            margin-bottom: 20px; /* Space below the navigation bar */
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        /* Styling for navigation links */
         nav a {
-            padding: 10px 20px; /* Space around the link text */
-            background-color: #2980b9; /* Blue background for links */
-            color: white; /* White text color */
-            border-radius: 5px; /* Rounded corners for links */
-            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
-            margin: 0 5px; /* Space between links */
-            text-decoration: none; /* Removes underline from links */
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 0 5px;
+            text-decoration: none;
         }
 
-        /* Hover effect for navigation links */
         nav a:hover {
-            background-color: #1abc9c; /* Changes background color on hover */
-            transform: scale(1.05); /* Slightly enlarges link on hover */
+            background-color: #1abc9c;
+            transform: scale(1.05);
         }
 
         /* Paragraph and List Styling */
         p {
-            font-size: 18px; /* Font size for paragraphs */
-            line-height: 1.8; /* Line height for better readability */
-            margin: 20px auto; /* Space around paragraphs, centered */
-            max-width: 800px; /* Maximum width for paragraphs */
-            text-align: center; /* Centers paragraph text */
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
         }
 
-        /* Unordered List Styling */
         ul {
-            list-style: none; /* Removes default bullet points */
-            padding: 0; /* Removes default padding */
-            margin: 20px auto; /* Space around the list, centered */
-            max-width: 800px; /* Maximum width for the list */
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
+            max-width: 800px;
         }
 
-        /* Styling for each list item */
         ul li {
-            padding: 10px; /* Space around list item text */
-            background: #ecf0f1; /* Light gray background for list items */
-            border-radius: 5px; /* Rounded corners for list items */
-            margin: 10px 0; /* Space between list items */
-            display: flex; /* Allows for alignment of icon and text */
-            align-items: center; /* Vertically centers icon and text */
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
         }
 
-        /* Icon styling within list items */
         ul li i {
-            margin-right: 10px; /* Space between icon and text */
-            color: #2980b9; /* Blue color for icons */
+            margin-right: 10px;
+            color: #2980b9;
         }
 
         /* Footer Styling */
         footer {
-            background-color: #2c3e50; /* Dark gray background for footer */
-            color: white; /* White text color */
-            padding: 20px; /* Space inside footer */
-            text-align: center; /* Centers text within footer */
-            position: relative; /* Allows for positioning */
-            bottom: 0; /* Positions footer at the bottom */
-            width: 100%; /* Makes footer full width */
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
 
-        /* Styling for links in the footer */
         footer a {
-            color: #1abc9c; /* Green color for footer links */
-            text-decoration: none; /* Removes underline from footer links */
+            color: #1abc9c;
+            text-decoration: none;
         }
 
-        /* Hover effect for footer links */
         footer a:hover {
-            text-decoration: underline; /* Underlines link on hover */
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <!-- Header section containing the image and title -->
+    <!-- Header section -->
     <header>
         <img src="./Header_picture.jpg" alt="Header Image">
         <h1>Population and Organism Diversity Laboratory</h1>
     </header>
 
-    <!-- Navigation bar with links to different sections -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="members.html">Members</a>
-        <a href="publications.html">Publications</a>
-        <a href="positions.html">Positions</a>
-        <a href="workshops.html">Workshops</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <!-- Main container for layout -->
+    <div class="container">
+        <!-- Sidebar for updates -->
+        <div class="sidebar">
+            <h2>Lab Updates</h2>
+            <ul>
+                <li>New research on genetic diversity published!</li>
+                <li>Upcoming workshop on wildlife genomics scheduled for November.</li>
+                <li>Meet our new lab members!</li>
+                <li>Participated in the international conservation conference.</li>
+            </ul>
+        </div>
 
-    <hr>
+        <!-- Main content area -->
+        <div class="main-content">
+            <!-- Navigation bar -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="members.html">Members</a>
+                <a href="publications.html">Publications</a>
+                <a href="positions.html">Positions</a>
+                <a href="workshops.html">Workshops</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-    <!-- Main content area with paragraphs and list -->
-    <p>
-        In the Population and Organism Diversity Lab at the Centre for Ecological Sciences (CES), Indian Institute of Science, we study the diversity of populations of the species around us. We are especially interested in understanding how small populations survive or go extinct.
-    </p>
-    <p>
-        We conduct simulations and empirical studies on populations of wild animals to try and understand.
-    </p>
+            <hr>
 
-    <!-- Unordered list with icons -->
-    <ul>
-        <li><i class="fas fa-paw"></i> How do small isolated populations survive?</li>
-        <li><i class="fas fa-leaf"></i> How do we design survival strategies?</li>
-        <li><i class="fas fa-dna"></i> Does genomic variation translate to phenotypic variation?</li>
-    </ul>
+            <!-- Main content paragraphs -->
+            <p>
+                In the Population and Organism Diversity Lab at the Centre for Ecological Sciences (CES), Indian Institute of Science, we study the diversity of populations of the species around us. We are especially interested in understanding how small populations survive or go extinct.
+            </p>
+            <p>
+                We conduct simulations and empirical studies on populations of wild animals to try and understand.
+            </p>
 
-    <p>
-        We also develop resources, tools, and techniques for genetic investigations of rare elusive species. We optimize methods for sequencing genomes from non-invasive and environmental samples.
-    </p>
-    <p>
-        Additionally, we ensure that the advances in wildlife genomic research are getting translated into on-ground management by conducting population genomics workshops across the tropics. Find the next scheduled workshop <a href="workshops.html">here.</a>
-    </p>
+            <!-- Unordered list with icons -->
+            <ul>
+                <li><i class="fas fa-paw"></i> How do small isolated populations survive?</li>
+                <li><i class="fas fa-leaf"></i> How do we design survival strategies?</li>
+                <li><i class="fas fa-dna"></i> Does genomic variation translate to phenotypic variation?</li>
+            </ul>
 
-    <!-- Footer section with copyright and contact link -->
+            <p>
+                We also develop resources, tools, and techniques for genetic investigations of rare elusive species. We optimize methods for sequencing genomes from non-invasive and environmental samples.
+            </p>
+            <p>
+                Additionally, we ensure that the advances in wildlife genomic research are getting translated into on-ground management by conducting population genomics workshops across the tropics. Find the next scheduled workshop <a href="workshops.html">here.</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer section -->
     <footer>
         <p>© 2024 Population and Organism Diversity Laboratory. All rights reserved.</p>
         <a href="mailto:labemail@domain.com">Contact Us</a>

@@ -1,49 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Population and Organism Diversity Laboratory</title>
-   <style>
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
+    <title>Population and Organism Diversity Laboratory</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
         }
-     h1 {
+
+        /* Body Styling */
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column; /* Arrange children vertically */
+            min-height: 100vh; /* Minimum height of the viewport */
+        }
+
+        /* Header Section */
+        header {
+            position: relative;
             text-align: center;
+            color: white;
+            margin-bottom: 20px;
+            width: 100%; /* Make header full width */
         }
+
+        header img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        /* Updated Header Text Styles */
+        header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4vw; /* Use viewport width for responsive text size */
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+            padding: 0 20px; /* Horizontal padding */
+            max-width: 90%; /* Allow the text to be 90% of the width */
+            overflow-wrap: break-word; /* Ensure long words break onto the next line */
+            white-space: normal; /* Allow text to wrap normally */
+            text-align: center; /* Center align text */
+        }
+
+        /* Main Container */
+        .container {
+            display: flex; /* Use flexbox for layout */
+            margin: 0 20px; /* Margin around the container */
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 250px; /* Fixed width for sidebar */
+            background-color: #ecf0f1; /* Light gray background */
+            padding: 20px; /* Padding for content */
+            margin-left: 20px; /* Space between sidebar and main content */
+            border-radius: 5px; /* Rounded corners for sidebar */
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            flex: 1; /* Allows the main content to fill available space */
+            padding: 20px; /* Add padding for main content */
+            background-color: #ffffff; /* White background for content area */
+            border-radius: 5px; /* Rounded corners for content area */
+        }
+
+        /* Navigation Bar */
         nav {
             text-align: center;
             margin-bottom: 20px;
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center align the navigation links */
+            flex-wrap: wrap; /* Allow links to wrap to the next line */
         }
+
         nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: blue;
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 5px; /* Add horizontal margin */
+            text-decoration: none; /* Remove underline from links */
+            flex-grow: 1; /* Allow the link to grow */
+            min-width: 120px; /* Set a minimum width for the links */
         }
+
         nav a:hover {
+            background-color: #1abc9c;
+            transform: scale(1.05);
+        }
+
+        /* Paragraph and List Styling */
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left; /* Align text to the left for better readability */
+        }
+
+        ul {
+            list-style: none; /* Remove default bullet points */
+            padding: 0; /* Remove default padding */
+            margin: 20px auto; /* Center and add margin */
+            max-width: 800px;
+        }
+
+        ul li {
+            padding: 10px; /* Padding for list items */
+            margin: 10px 0; /* Margin for vertical spacing */
+            display: flex; /* Align items within the list */
+            align-items: center; /* Center icon with text */
+        }
+
+        ul li i {
+            margin-right: 10px; /* Space between icon and text */
+            color: #2980b9; /* Color for icons */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%; /* Make footer full width */
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+
+        footer a:hover {
             text-decoration: underline;
         }
-    
-    </style>
 
+        /* Media Query for Smaller Screens */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column; /* Stack links vertically */
+                align-items: center; /* Center align links */
+            }
+
+            nav a {
+                width: 90%; /* Set a width for links (not full width) */
+                margin: 10px 0; /* Maintain vertical margin when wrapped */
+                padding: 15px; /* Adjust padding for better touch targets */
+                text-align: center; /* Center text in links */
+                margin-left: 0; /* Remove left margin on smaller screens */
+                margin-right: 0; /* Remove right margin on smaller screens */
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <img src="./Header_picture.jpg">
-  <h1 >Population and Organism Diversity Laboratory</h1>
-  <hr>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="members.html">Members</a>
-        <a href="publications.html">Publications</a>
-        <a href="positions.html">Positions</a>
-        <a href="workshops.html">Workshops</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-  <hr> 
+    <!-- Header section -->
+    <header>
+        <img src="./Header_picture.jpg" alt="Header Image">
+        <h1>Population and Organism Diversity Laboratory</h1>
+    </header>
+
+    <!-- Main container for layout -->
+    <div class="container">
+        <!-- Main content area -->
+        <div class="main-content">
+            <!-- Navigation bar -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="members.html">Members</a>
+                <a href="publications.html">Publications</a>
+                <a href="positions.html">Positions</a>
+                <a href="workshops.html">Workshops</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <hr>
 <p>
   Our research can be divided into three major themes
 </p>

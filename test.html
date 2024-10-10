@@ -86,7 +86,7 @@
             color: white;
             border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            margin: 5px 0; /* Use vertical margins only */
+            margin: 5px; /* Add horizontal margin */
             text-decoration: none; /* Remove underline from links */
             flex-grow: 1; /* Allow the link to grow */
             min-width: 120px; /* Set a minimum width for the links */
@@ -154,9 +154,11 @@
 
             nav a {
                 width: 90%; /* Set a width for links (not full width) */
-                margin: 10px 0; /* Add vertical margin to ensure spacing when wrapped */
+                margin: 10px 0; /* Maintain vertical margin when wrapped */
                 padding: 15px; /* Adjust padding for better touch targets */
                 text-align: center; /* Center text in links */
+                margin-left: 0; /* Remove left margin on smaller screens */
+                margin-right: 0; /* Remove right margin on smaller screens */
             }
         }
     </style>
@@ -218,3 +220,14 @@
             </p>
             <p>
                 Additionally, we ensure that the advances in wildlife genomic research are getting translated into on-ground management by conducting population genomics workshops across the tropics. Find
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Population and Organism Diversity Laboratory. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>

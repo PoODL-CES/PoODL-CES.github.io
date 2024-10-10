@@ -38,6 +38,7 @@
             height: auto;
         }
 
+        /* Add this to adjust hero text */
         header h1 {
             position: absolute;
             top: 50%;
@@ -45,6 +46,18 @@
             transform: translate(-50%, -50%);
             font-size: 48px;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            padding: 0 10px; /* Add horizontal padding */
+            max-width: 90%; /* Limit width to 90% of the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better visibility */
+        }
+
+        /* Media Query for Smaller Screens */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px; /* Adjust font size for smaller screens */
+                padding: 0 5px; /* Add padding to prevent spilling */
+                max-width: 80%; /* Limit width further on smaller screens */
+            }
         }
 
         /* Main Container */
@@ -167,7 +180,7 @@
     <!-- Header section -->
     <header>
         <img src="./Header_picture.jpg" alt="Header Image">
-        <h1>Population and Organism Diversity Laboratory</h1>
+        <h1>Population and Organism Diversity Laboratory.</h1>
     </header>
 
     <!-- Main container for layout -->

@@ -20,8 +20,8 @@
             color: #333;
             line-height: 1.6;
             display: flex;
-            flex-direction: column; /* Arrange children vertically */
-            min-height: 100vh; /* Minimum height of the viewport */
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         /* Header Section */
@@ -30,7 +30,7 @@
             text-align: center;
             color: white;
             margin-bottom: 20px;
-            width: 100%; /* Make header full width */
+            width: 100%;
         }
 
         header img {
@@ -44,45 +44,46 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 4vw; /* Use viewport width for responsive text size */
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Shadow for readability */
-            padding: 0 20px; /* Horizontal padding */
-            max-width: 90%; /* Allow the text to be 90% of the width */
-            overflow-wrap: break-word; /* Ensure long words break onto the next line */
-            white-space: normal; /* Allow text to wrap normally */
-            text-align: center; /* Center align text */
+            font-size: 4vw;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            padding: 0 20px;
+            max-width: 90%;
+            overflow-wrap: break-word;
+            white-space: normal;
+            text-align: center;
         }
-        
+
         /* Main Container */
         .container {
-            display: flex; /* Use flexbox for layout */
-            margin: 0 20px; /* Margin around the container */
+            display: flex;
+            margin: 0 20px;
+            flex-direction: column; /* Stack everything vertically for smaller screens */
         }
 
         /* Sidebar Styling */
         .sidebar {
-            width: 250px; /* Fixed width for sidebar */
-            background-color: #ecf0f1; /* Light gray background */
-            padding: 20px; /* Padding for content */
-            margin-left: 20px; /* Space between sidebar and main content */
-            border-radius: 5px; /* Rounded corners for sidebar */
+            width: 100%; /* Make sidebar full width */
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin: 20px 0; /* Space between sidebar and main content */
+            border-radius: 5px;
         }
 
         /* Main Content Styling */
         .main-content {
-            flex: 1; /* Allows the main content to fill available space */
-            padding: 20px; /* Add padding for main content */
-            background-color: #ffffff; /* White background for content area */
-            border-radius: 5px; /* Rounded corners for content area */
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
         }
 
         /* Navigation Bar */
         nav {
             text-align: center;
             margin-bottom: 20px;
-            display: flex; /* Use flexbox for layout */
-            justify-content: center; /* Center align the navigation links */
-            flex-wrap: wrap; /* Allow links to wrap to the next line */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -91,10 +92,10 @@
             color: white;
             border-radius: 5px;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            margin: 5px; /* Add horizontal margin */
-            text-decoration: none; /* Remove underline from links */
-            flex-grow: 1; /* Allow the link to grow */
-            min-width: 120px; /* Set a minimum width for the links */
+            margin: 5px;
+            text-decoration: none;
+            flex-grow: 1;
+            min-width: 120px;
         }
 
         nav a:hover {
@@ -108,33 +109,35 @@
             line-height: 1.8;
             margin: 20px auto;
             max-width: 800px;
-            text-align: left; /* Align text to the left for better readability */
+            text-align: left;
         }
-       h2, h3 {
+
+        h2, h3 {
             margin: 20px auto;
             max-width: 800px;
-            text-align: left; /* Align text to the left for better readability */
+            text-align: left;
         }
+
         ul {
-            list-style: none; /* Remove default bullet points */
-            padding: 0; /* Remove default padding */
-            margin: 20px auto; /* Center and add margin */
+            list-style: none;
+            padding: 0;
+            margin: 20px auto;
             max-width: 800px;
-            font-size: 18px; /* Match font size to paragraphs */
-            line-height: 1.8; /* Match line height to paragraphs */
+            font-size: 18px;
+            line-height: 1.8;
         }
 
         ul li {
-            padding: 10px; /* Padding for list items */
-            margin: 10px 0; /* Margin for vertical spacing */
-            display: flex; /* Align items within the list */
-            align-items: left; /* Center icon with text */
-            text-align: left; /* Align text to the left */
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            text-align: left;
         }
 
         ul li i {
-            margin-right: 10px; /* Space between icon and text */
-            color: #2980b9; /* Color for icons */
+            margin-right: 10px;
+            color: #2980b9;
         }
 
         /* Footer Styling */
@@ -143,7 +146,7 @@
             color: white;
             padding: 20px;
             text-align: center;
-            width: 100%; /* Make footer full width */
+            width: 100%;
         }
 
         footer a {
@@ -155,20 +158,27 @@
             text-decoration: underline;
         }
 
-        /* Media Query for Smaller Screens */
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column; /* Stack links vertically */
-                align-items: center; /* Center align links */
+        /* Media Query for Larger Screens */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row; /* Go back to side-by-side layout */
             }
 
-            nav a {
-                width: 90%; /* Set a width for links (not full width) */
-                margin: 10px 0; /* Maintain vertical margin when wrapped */
-                padding: 15px; /* Adjust padding for better touch targets */
-                text-align: center; /* Center text in links */
-                margin-left: 0; /* Remove left margin on smaller screens */
-                margin-right: 0; /* Remove right margin on smaller screens */
+            .sidebar {
+                width: 250px;
+                margin-left: 20px;
+            }
+
+            .main-content {
+                flex: 1;
+            }
+        }
+
+        /* Media Query for Smaller Screens */
+        @media (max-width: 767px) {
+            .sidebar {
+                width: 100%;
+                margin: 20px 0;
             }
         }
     </style>
@@ -185,7 +195,6 @@
     <div class="container">
         <!-- Main content area -->
         <div class="main-content">
-            <!-- Navigation bar -->
             <nav>
                 <a href="index.html">Home</a>
                 <a href="research.html">Research</a>
@@ -195,7 +204,6 @@
                 <a href="positions.html">Positions</a>
                 <a href="workshops.html">Workshops</a>
                 <a href="contact.html">Contact</a>
-                <a href="test.html">Test</a>
             </nav>
 
             <hr>

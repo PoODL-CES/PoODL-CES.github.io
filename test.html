@@ -54,28 +54,27 @@
         }
 
         /* Main Container */
-        .container {
-            display: flex; /* Use flexbox for layout */
-            margin: 0 20px; /* Margin around the container */
-        }
-
-        /* Sidebar Styling */
-        .sidebar {
-            width: 250px; /* Fixed width for sidebar */
-            background-color: #ecf0f1; /* Light gray background */
-            padding: 20px; /* Padding for content */
-            margin-left: 20px; /* Space between sidebar and main content */
-            border-radius: 5px; /* Rounded corners for sidebar */
-            flex-shrink: 0; /* Prevent the sidebar from shrinking */
-            position: relative; /* Position relative to maintain stacking context */
+        .main-container {
+            margin: 0 20px;
         }
 
         /* Main Content Styling */
         .main-content {
-            flex: 1; /* Allows the main content to fill available space */
             padding: 20px; /* Add padding for main content */
             background-color: #ffffff; /* White background for content area */
             border-radius: 5px; /* Rounded corners for content area */
+        }
+
+        /* Sidebar Styling */
+        .sidebar-container {
+            margin: 20px 20px;
+        }
+
+        .sidebar {
+            width: 100%; /* Full width for sidebar */
+            background-color: #ecf0f1; /* Light gray background */
+            padding: 20px; /* Padding for content */
+            border-radius: 5px; /* Rounded corners for sidebar */
         }
 
         /* Navigation Bar */
@@ -171,18 +170,6 @@
                 margin: 10px 0; /* Maintain vertical margin when wrapped */
                 padding: 15px; /* Adjust padding for better touch targets */
                 text-align: center; /* Center text in links */
-                margin-left: 0; /* Remove left margin on smaller screens */
-                margin-right: 0; /* Remove right margin on smaller screens */
-            }
-
-            .container {
-                flex-direction: column; /* Stack the main content and sidebar on smaller screens */
-                align-items: center; /* Center align the content */
-            }
-
-            .sidebar {
-                margin-left: 0; /* Remove left margin on smaller screens */
-                width: 100%; /* Set sidebar width to full on smaller screens */
             }
         }
     </style>
@@ -192,11 +179,11 @@
     <!-- Header section -->
     <header>
         <img src="./Header_picture.jpg" alt="Header Image">
-        <h1>Population and Organism Diversity Laboratory.</h1>
+        <h1>Population and Organism Diversity Laboratory</h1>
     </header>
 
     <!-- Main container for layout -->
-    <div class="container">
+    <div class="main-container">
         <!-- Main content area -->
         <div class="main-content">
             <!-- Navigation bar -->
@@ -243,12 +230,14 @@
                 Find the next scheduled workshop <a href="workshops.html">here.</a> Join us as we work together to understand our planet’s biodiversity!
             </p>
         </div>
+    </div>
 
-        <!-- Sidebar for updates -->
+    <!-- Sidebar for updates -->
+    <div class="sidebar-container">
         <div class="sidebar">
             <h2>Lab Updates</h2>
             <ul>
-                <li><a href="members.html">Meet the first members of our lab </a> </li>
+                <li><a href="members.html">Meet the first members of our lab</a></li>
                 <li>Upcoming workshop on wildlife genomics scheduled for March.</li>
             </ul>
         </div>

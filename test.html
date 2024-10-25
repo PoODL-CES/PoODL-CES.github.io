@@ -216,14 +216,30 @@
         </div>
 
         <!-- Sidebar for updates -->
-        <div class="sidebar">
-            <h2>Lab Updates</h2>
-            <ul>
-                <li><a href="members.html">Meet the first members of our lab</a></li>
-                <li>Upcoming workshop on wildlife genomics scheduled for March.</li>
-            </ul>
-        </div>
-    </div>
+        <script>
+        // Fetch sidebar items from another page
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('items.html') // Path to the source page with items
+                .then(response => response.text())
+                .then(data => {
+                    // Create a temporary DOM to parse the fetched HTML
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(data, 'text/html');
+
+                    // Select the elements you want from the fetched HTML
+                    const items = doc.querySelectorAll(".important-item");
+
+                    // Append each item to the sidebar
+                    const sidebarContent = document.getElementById("sidebar-content");
+                    items.forEach(item => {
+                        const listItem = document.createElement("li");
+                        listItem.innerHTML = item.innerHTML; // Copy item content
+                        sidebarContent.appendChild(listItem);
+                    });
+                })
+                .catch(error => console.error('Error loading sidebar items:', error));
+        });
+    </script>
 
     <!-- Footer Section -->
     <footer>

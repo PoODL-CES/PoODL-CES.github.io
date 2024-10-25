@@ -218,6 +218,8 @@
         <!-- Sidebar for updates -->
         <script>
         // Fetch sidebar items from another page
+    <div class="sidebar">
+         <h2>Lab Updates</h2>
         document.addEventListener("DOMContentLoaded", function() {
             fetch('items.html') // Path to the source page with items
                 .then(response => response.text())
@@ -240,6 +242,8 @@
                 .catch(error => console.error('Error loading sidebar items:', error));
         });
     </script>
+        </div>
+    </div>
 
     <!-- Footer Section -->
     <footer>

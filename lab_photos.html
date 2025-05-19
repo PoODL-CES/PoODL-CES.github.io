@@ -15,7 +15,6 @@
             font-family: 'Arial', sans-serif;
         }
 
-        /* Body Styling */
         body {
             background-color: #f4f6f8;
             color: #333;
@@ -25,7 +24,6 @@
             min-height: 100vh;
         }
 
-        /* Header Section */
         header {
             position: relative;
             text-align: center;
@@ -39,7 +37,6 @@
             height: auto;
         }
 
-        /* Updated Header Text Styles */
         header h1 {
             position: absolute;
             top: 50%;
@@ -54,31 +51,6 @@
             text-align: center;
         }
 
-        /* Main Container */
-        .container {
-            display: flex;
-            margin: 0 20px;
-            flex-direction: column; /* Stack everything vertically for smaller screens */
-        }
-
-        /* Sidebar Styling */
-        .sidebar {
-            width: 100%; /* Make sidebar full width */
-            background-color: #ecf0f1;
-            padding: 20px;
-            margin: 20px 0; /* Space between sidebar and main content */
-            border-radius: 5px;
-        }
-
-        /* Main Content Styling */
-        .main-content {
-            flex: 1;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 5px;
-        }
-
-        /* Navigation Bar */
         nav {
             text-align: center;
             margin-bottom: 20px;
@@ -104,16 +76,37 @@
             transform: scale(1.05);
         }
 
-        /* Paragraph and List Styling */
-        p {
-            font-size: 18px;
-            line-height: 1.8;
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar {
+            width: 100%;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+
+        h2, h3 {
             margin: 20px auto;
             max-width: 800px;
             text-align: left;
         }
 
-        h2, h3 {
+        p {
+            font-size: 18px;
+            line-height: 1.8;
             margin: 20px auto;
             max-width: 800px;
             text-align: left;
@@ -129,19 +122,22 @@
         }
 
         ul li {
-            padding: 10px;
-            margin: 10px 0;
-            display: flex;
-            align-items: left;
-            text-align: left;
+            padding: 10px 0;
         }
 
-        ul li i {
-            margin-right: 10px;
-            color: #2980b9;
+        .event-section {
+            margin-bottom: 30px;
         }
 
-        /* Footer Styling */
+        .event-section img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
         footer {
             background-color: #2c3e50;
             color: white;
@@ -159,10 +155,9 @@
             text-decoration: underline;
         }
 
-        /* Media Query for Larger Screens */
         @media (min-width: 768px) {
             .container {
-                flex-direction: row; /* Go back to side-by-side layout */
+                flex-direction: row;
             }
 
             .sidebar {
@@ -175,26 +170,31 @@
             }
         }
 
-        /* Media Query for Smaller Screens */
         @media (max-width: 767px) {
             .sidebar {
                 width: 100%;
-                margin: 20px 0;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                width: 100%;
+                max-width: 300px;
             }
         }
     </style>
 </head>
 
 <body>
-    <!-- Header section -->
     <header>
         <img src="./Header_picture.jpg" alt="Header Image">
         <h1>Population and Organism Diversity Laboratory</h1>
     </header>
 
-    <!-- Main container for layout -->
     <div class="container">
-        <!-- Main content area -->
         <div class="main-content">
             <nav>
                 <a href="index.html">Home</a>
@@ -210,39 +210,38 @@
 
             <hr>
 
-            <!-- Main content paragraphs -->
-            <h2>PoODL members at Genome Informatics Across Scales Conference, NCBS Bengaluru 2025</h2>
-      <div style="display: flex; align-items: flex-start;">
-        <img src="gias_ncbs.jpg" alt="GIAS NCBS Bengaluru 2025" style="width: 800px; height: auto; margin-right: 10px;">
-      </div>
-      </div>
-            
-            <h2>PoODL members at SCCS, Bengaluru 2024</h2>
-      <div style="display: flex; align-items: flex-start;">
-        <img src="SCCS_2024.jpg" alt="SCCS Bangalore 2024" style="width: 800px; height: auto; margin-right: 10px;">
-      </div>
-      </div>
+            <!-- Event 1 -->
+            <div class="event-section">
+                <h2>PoODL members at Genome Informatics Across Scales Conference, NCBS Bengaluru 2025</h2>
+                <img src="gias_ncbs.jpg" alt="GIAS NCBS Bengaluru 2025">
+            </div>
 
-       <!-- Sidebar for updates -->
-        <div class="sidebar">
+            <!-- Event 2 -->
+            <div class="event-section">
+                <h2>PoODL members at SCCS, Bengaluru 2024</h2>
+                <img src="SCCS_2024.jpg" alt="SCCS Bangalore 2024">
+            </div>
+        </div>
+
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
             <h2>Lab Updates</h2>
             <ul>
-                <li>Haradhan Ruidas received the DBT-CTEP Travel Grant to attend and present in the International Congress for Conservation Biology 2025 (ICCB 2025) in Brisbane, Australia</li>
-                <li><a href="members.html">Meet the first members of our lab </a> </li>
-                 <li>We received the ANRF Early Career Grant to study evolution of body size in monitor lizards </li>
-                <li><a href="https://www.thehabitatstrust.org/indian-institute-of-science.php">We received the THT Conservation Grant 2024 with Umesh Srinivasan lab to study the critically endangered Bugun Liocichla</a> </li>
-                <li><a href="lab_photos.html">PoODL members at SCCS, Bangalore 2024 </a> </li>
+                <li>Haradhan Ruidas received the DBT-CTEP Travel Grant to attend and present at ICCB 2025 in Brisbane, Australia.</li>
+                <li><a href="members.html">Meet the first members of our lab</a></li>
+                <li>We received the ANRF Early Career Grant to study the evolution of body size in monitor lizards.</li>
+                <li><a href="https://www.thehabitatstrust.org/indian-institute-of-science.php">THT Conservation Grant 2024 with Umesh Srinivasan lab for Bugun Liocichla study</a></li>
+                <li><a href="lab_photos.html">PoODL members at SCCS, Bangalore 2024</a></li>
                 <li>Upcoming workshop on wildlife genomics scheduled for March.</li>
             </ul>
-        </div>
+        </aside>
     </div>
 
-    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Population and Organism Diversity Laboratory. All rights reserved. | <a href="contact.html">Contact</a></p>
     </footer>
 
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 

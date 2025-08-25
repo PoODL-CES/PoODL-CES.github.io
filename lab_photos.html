@@ -47,7 +47,6 @@
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
       padding: 0 20px;
       max-width: 90%;
-      overflow-wrap: break-word;
       white-space: normal;
       text-align: center;
     }
@@ -99,56 +98,26 @@
       margin-bottom: 40px;
     }
 
-    h2,
-    h3 {
-      margin: 20px auto;
-      max-width: 800px;
-      text-align: left;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.8;
-      margin: 20px auto;
-      max-width: 800px;
-      text-align: left;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 20px auto;
-      max-width: 800px;
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    ul li {
-      padding: 10px 0;
-    }
-
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
+    h2.section-title {
+      margin: 30px auto 10px;
+      max-width: 900px;
       text-align: center;
-      width: 100%;
+      font-size: 1.6rem;
+      color: #2c3e50;
     }
 
-    footer a {
-      color: #1abc9c;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
+    .caption {
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+      text-align: center;
     }
 
     /* Slider styles */
     .slider {
       position: relative;
       max-width: 900px;
-      margin: auto;
+      margin: 20px auto;
       overflow: hidden;
       background: #fff;
       border-radius: 10px;
@@ -173,9 +142,8 @@
     .next {
       cursor: pointer;
       position: absolute;
-      top: 50%;
+      top: 45%;
       padding: 12px;
-      margin-top: -22px;
       color: white;
       font-weight: bold;
       font-size: 22px;
@@ -197,6 +165,23 @@
 
     .next {
       right: 10px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    footer a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
 
     @media (min-width: 768px) {
@@ -254,41 +239,43 @@
 
       <hr>
 
-      <!-- Slider Container -->
-      <div class="slider">
-        <!-- Slides -->
+      <!-- LAB PHOTOS SLIDER -->
+      <h2 class="section-title">Lab Photos</h2>
+      <div class="slider" id="labSlider">
         <div class="slide active">
-          <h2>Left to right: Aayushi, Haradhan and Anubhab at Dublagadi beach, Balasore, Odisha in August 2025</h2>
           <img src="dublagadi_beach_balasore.jpg" alt="Balasore August 2025">
+          <p class="caption">Left to right: Aayushi, Haradhan and Anubhab at Dublagadi beach, Odisha (Aug 2025)</p>
         </div>
-
         <div class="slide">
-          <h2>Left to right: Pranav, Aayushi, Anubhab and Haradhan at Dublagadi beach, Balasore, Odisha in August 2025</h2>
           <img src="dublagadi_beach2.jpg" alt="Balasore August 2025">
+          <p class="caption">Left to right: Pranav, Aayushi, Anubhab and Haradhan at Dublagadi beach, Odisha (Aug 2025)</p>
         </div>
-
         <div class="slide">
-          <h2>Hands-on training on Conservation Genomics, Wildlife genomics workshop at Training Program on Ecological and Genetical Approaches for Conservation of Coastal Biodiversity including Indian Horseshoe Crabs August 2025, Fakir Mohan University, Balasore, India</h2>
-          <img src="20250821_093147480_iOS.jpg" alt="Balasore August 2025">
-        </div>
-
-        <div class="slide">
-          <h2>PoODL members at Genome Informatics Across Scales Conference, NCBS Bengaluru 2025 (Top row: (L to R) Abhik, Pranav, Anubhab, Nithin. Bottom row: (L to R) Aayushi, Akancha, Haradhan.)</h2>
           <img src="gias_ncbs.jpg" alt="GIAS NCBS Bengaluru 2025">
+          <p class="caption">PoODL members at Genome Informatics Across Scales, NCBS Bengaluru (2025)</p>
         </div>
-
         <div class="slide">
-          <h2>PoODL members at Student Conference on Conservation Science (SCCS) 2024, Bengaluru</h2>
           <img src="SCCS_2024.jpg" alt="SCCS 2024">
+          <p class="caption">PoODL members at SCCS, Bengaluru (2024)</p>
         </div>
+        <button class="prev" onclick="changeSlide(-1, 'labSlider')">&#10094;</button>
+        <button class="next" onclick="changeSlide(1, 'labSlider')">&#10095;</button>
+      </div>
 
-        <!-- Navigation buttons -->
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      <!-- WORKSHOP PHOTOS SLIDER -->
+      <h2 class="section-title">Workshop Photos</h2>
+      <div class="slider" id="workshopSlider">
+        <div class="slide active">
+          <img src="20250821_093147480_iOS.jpg" alt="Workshop Balasore August 2025">
+          <p class="caption">Hands-on training on Conservation Genomics, Fakir Mohan University, Balasore (Aug 2025)</p>
+        </div>
+        <!-- add more workshop slides here -->
+        <button class="prev" onclick="changeSlide(-1, 'workshopSlider')">&#10094;</button>
+        <button class="next" onclick="changeSlide(1, 'workshopSlider')">&#10095;</button>
       </div>
     </div>
 
-    <!-- Sidebar Section -->
+    <!-- Sidebar -->
     <aside class="sidebar">
       <h2>Lab Updates</h2>
       <ul>
@@ -306,30 +293,35 @@
     <p>&copy; 2024 Population and Organism Diversity Laboratory. All rights reserved. | <a href="contact.html">Contact</a></p>
   </footer>
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
   <!-- Slider Script -->
   <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll(".slide");
+    // Store separate indexes for each slider
+    let slideIndexes = {
+      labSlider: 0,
+      workshopSlider: 0
+    };
 
-    function showSlide(index) {
+    function showSlide(index, sliderId) {
+      const slider = document.getElementById(sliderId);
+      const slides = slider.querySelectorAll(".slide");
       slides.forEach((slide, i) => {
         slide.classList.remove("active");
         if (i === index) slide.classList.add("active");
       });
     }
 
-    function changeSlide(n) {
-      currentSlide += n;
-      if (currentSlide >= slides.length) currentSlide = 0;
-      if (currentSlide < 0) currentSlide = slides.length - 1;
-      showSlide(currentSlide);
+    function changeSlide(n, sliderId) {
+      const slider = document.getElementById(sliderId);
+      const slides = slider.querySelectorAll(".slide");
+      slideIndexes[sliderId] += n;
+      if (slideIndexes[sliderId] >= slides.length) slideIndexes[sliderId] = 0;
+      if (slideIndexes[sliderId] < 0) slideIndexes[sliderId] = slides.length - 1;
+      showSlide(slideIndexes[sliderId], sliderId);
     }
 
-    // Initialize
-    showSlide(currentSlide);
+    // Initialize sliders
+    showSlide(slideIndexes.labSlider, "labSlider");
+    showSlide(slideIndexes.workshopSlider, "workshopSlider");
   </script>
 </body>
 

@@ -1,425 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Anubhab Khan leads the Population and Organism Diversity Lab at the Indian Institute of Science. Learn about his research in wildlife genomics and conservation biology.">
-    <title>Anubhab Khan | Population and Organism Diversity Laboratory</title>
-    <style>
-        /* Basic Reset */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Photos</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Slider container */
+    .slider-container {
+      max-width: 100%;
+      margin: 0 auto 40px auto;
+      position: relative;
+    }
 
-        /* Body Styling */
-        body {
-            background-color: #f4f6f8;
-            color: #333;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+    /* Swiper images */
+    .swiper-slide img {
+      width: 100%;
+      border-radius: 5px;
+    }
 
-        /* Header Section */
-        header {
-            position: relative;
-            text-align: center;
-            color: white;
-            margin-bottom: 20px;
-            width: 100%;
-        }
+    /* Captions below each image */
+    .swiper-slide .caption {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+    }
 
-        header img {
-            max-width: 80%;
-            height: auto;
-        }
+    /* Sidebar styling fixes */
+    .sidebar {
+      width: 100%;
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 0; /* keep consistent across tabs */
+    }
 
-        /* Updated Header Text Styles */
-        header h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 4vw;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-            padding: 0 20px;
-            max-width: 90%;
-            overflow-wrap: break-word;
-            white-space: normal;
-            text-align: center;
-        }
+    .sidebar ul {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
 
-        /* Main Container */
-        .container {
-            display: flex;
-            margin: 0 20px;
-            flex-direction: column; /* Stack everything vertically for smaller screens */
-        }
+    .sidebar li {
+      margin-bottom: 12px;
+    }
+  </style>
 
-        /* Sidebar Styling */
-        .sidebar {
-            width: 100%; /* Make sidebar full width */
-            background-color: #ecf0f1;
-            padding: 20px;
-            margin: 20px 0; /* Space between sidebar and main content */
-            border-radius: 5px;
-        }
-
-        /* Main Content Styling */
-        .main-content {
-            flex: 1;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 5px;
-        }
-
-        /* Navigation Bar */
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            padding: 10px 20px;
-            background-color: #2980b9;
-            color: white;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            margin: 5px;
-            text-decoration: none;
-            flex-grow: 1;
-            min-width: 120px;
-        }
-
-        nav a:hover {
-            background-color: #1abc9c;
-            transform: scale(1.05);
-        }
-
-        /* Paragraph and List Styling */
-        p {
-            font-size: 18px;
-            line-height: 1.8;
-            margin: 20px auto;
-            max-width: 800px;
-            text-align: left;
-        }
-
-        h2, h3 {
-            margin: 20px auto;
-            max-width: 800px;
-            text-align: left;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 20px auto;
-            max-width: 800px;
-            font-size: 18px;
-            line-height: 1.8;
-        }
-
-        ul li {
-            padding: 10px;
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-            text-align: left;
-        }
-
-        ul li i {
-            margin-right: 10px;
-            color: #2980b9;
-        }
-
-        /* Footer Styling */
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            width: 100%;
-        }
-
-        footer a {
-            color: #1abc9c;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Media Query for Larger Screens */
-        @media (min-width: 768px) {
-            .container {
-                flex-direction: row; /* Go back to side-by-side layout */
-            }
-
-            .sidebar {
-                width: 250px;
-                margin-left: 20px;
-            }
-
-            .main-content {
-                flex: 1;
-            }
-        }
-
-        /* Media Query for Smaller Screens */
-        @media (max-width: 767px) {
-            .sidebar {
-                width: 100%;
-                margin: 20px 0;
-            }
-        }
-    </style>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
-
 <body>
-    <!-- Header section -->
-    <header>
-        <img src="./Header_picture.jpg" alt="Header Image">
-        <h1>Population and Organism Diversity Laboratory</h1>
-    </header>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="section-title">Lab Updates</h2>
+      <ul>
+        <li>New equipment installed in molecular lab</li>
+        <li>Workshop on ecological modeling scheduled</li>
+        <li>Field trip photos coming soon!</li>
+      </ul>
+    </aside>
 
-    <!-- Main container for layout -->
-    <div class="container">
-        <!-- Main content area -->
-        <div class="main-content">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="research.html">Research</a>
-                <a href="teaching.html">Teaching</a>
-                <a href="members.html">Members</a>
-                <a href="publications.html">Publications</a>
-                <a href="positions.html">Positions</a>
-                <a href="workshops.html">Workshops</a>
-                <a href="contact.html">Contact</a>
-                <a href="lab_photos.html">Lab Photos</a>
-            </nav>
-
-            <hr>
-
-  <h2>Faculty</h2>
-      <div style="display: flex; align-items: flex-start;">
-    <img src="Anubhab_fullRes.jpg" alt="Anubhab Khan" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Anubhab Khan</span><br>
-        anubhabkhan@iisc.ac.in | twitter: @Anubhab_Khan <br>
-        I am interested in understanding trait evolution, extinction and survival of populations. I like developing and optimizing methods for making wildlife genomics accessible to all. I have been conducting and teaching in various workshops to train academicians, managers and conservationists in wildlife genetics. Outside of research, I enjoy travelling, sampling beers, cooking and watching movies. I enjoy poetry and philosophy. <br>
-        <a href="CV.pdf">CV</a>
-    </div>
-</div>
-
-  <h2>PhD students</h2>
-      <div style="display: flex; align-items: flex-start;">
-    <img src="Haradhan_fullRes.jpg" alt="Haradhan Ruidas" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Haradhan Ruidas</span><br>
-        rharadhan@iisc.ac.in  | twitter: @ruidas_haradhan <br>
-I study the genomics of Indian cetaceans My research focuses on developing a genome assembly, analysing population structure, and exploring genetic factors to inform conservation strategies for endangered dolphins in Indian waters.
-Before this, I looked into microplastic accumulation in the tissues of the spadenose shark for my master's thesis. This research focused on understanding the potential impacts on reproductive organs of sharks collected from Malvan, Maharashtra.
-In my free time, I enjoy cooking, hiking, painting, swimming, and crafting.<br>
-Research Interests: Population genomics, aquatic ecology, and conservation biology. <br>
-Education: BS-MS dual degree in Biological Sciences, IISER, Berhampur (2023)     
-    </div>
-</div>
-      <p> </p>
-  <div style="display: flex; align-items: flex-start;">
-    <img src="Pranav_fullRes.jpg" alt="Pranav Datar" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Pranav Datar</span><br>
-        pranavdatar@iisc.ac.in  | twitter: @pranavdatar3 <br>
-My fascination with wildlife started back in high school, where I used to spend time chasing birds and butterflies. They sparked my curiosity about why things in nature are the way they are. What began as a casual interest gradually grew into a deeper passion. I am broadly interested in evolutionary ecology, with a focus on understanding the evolution of size disparity in monitor lizards. Apart from that, I enjoy philosophy, travelling, wildlife photography, and I am fascinated by humanity’s prehistoric past.<br>
-Research Interests: Evolutionary biology, ecology, and population genomics. <br>
-Education: MSc, IISc, Bangalore (2024) | BSc, Vivekanand College, Kolhapur (2022)    
-    </div>
-</div>
-<p></p>
-            
- <div style="display: flex; align-items: flex-start;">
-    <img src="alex.jpg" alt="Alex Mahesh" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Alex Mahesh</span><br>
-        alexm@iisc.ac.in | twitter: @alex_mahesh_ <br>
-Right from my childhood days I have been fascinated by the beauty of nature, wildlife, and the variety of life forms found around me. With the Nipah virus outbreak in Kerala in 2018 and the later COVID 19 pandemic pointing their fingers towards bats, I developed a curiosity for zoonotic diseases and bats. As a PhD student in the lab, I will be working on Kolar Leaf nosed bat. Prior to joining the lab, I had been lucky to work in variety of landscapes from eastern and western ghats, central India and mid-Himalayas, and my model organisms has varied form ants and spiders to marine turtles and large mammals. Besides academia, I play all sorts of outdoor games with hockey and basketball being my favourites.<br>
-Research Interests: Evolutionary biology, disease ecology <br>
-Education:  Integrated MSc Biology, NISER Bhubaneswar (2022)     
-    </div>
-</div>
-      <p> </p>
-            
-<h2>Int. PhD students</h2>
-<div style="display: flex; align-items: flex-start;">
-    <img src="Aayushi_Gupta.jpg" alt="Aayushi Gupta" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Aayushi Gupta</span><br>
-        aayushigupta@iisc.ac.in  | twitter: @aayushigupta901 <br>
-I am currently pursuing MS under the Integrated PhD (MS PhD) programme in Biological Sciences in the Division of Biological Sciences. I am fascinated by how nature has shaped biodiversity over time, which drives my interest in population genomics and conservation biology. I am exploring the genomics of the cat family, focusing on studying hybridisation in the cat family to develop effective conservation strategies for endangered wild cats. In my free time, I love exploring new things and engaging in activities such as trekking, swimming, playing foosball, table tennis, travelling, and cooking.<br>
-Research Interests: Population genomics and conservation biology. <br>
-Education: BSc in Biosciences, University of Maharani College, Jaipur, Rajasthan (2021)     
-    </div>
-</div>
-
- <p> </p>
-<div style="display: flex; align-items: flex-start;">
-    <img src="sakhi_kundu.jpg" alt="Sakhi Kundu" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Sakhi Kundu</span><br>
-        sakhikundu@iisc.ac.in <br>
-Evolution has always intrigued me by the way it has the power to shape the natural world. Questions like “Can we predict how a particular trait will change?” or “Can we shape evolutionary outcomes?” drive my research interests. In today’s world, where climate change and deforestation are accelerating the extinction of countless species, I feel a growing concern for our future as a collective ecosystem. As an Integrated PhD student here in the PoODL lab, I want to work on evolutionary genetics and conservation efforts of Asian elephant - a keystone species vital to our ecosystem. Apart from my academia, I value spending time with my loved ones, exploring our beautiful wildlife, humming Rabindrasangeet & just lazing around in my free time.<br>
-Research Interests: Evolutionary biology, population genetics, conservation.<br>
-Education: BSc. in Life Sciences from Presidency University, Kolkata (2024)    
-    </div>
-</div>
-      <p> </p>
-            
-<h2>Project Staff</h2>
-  <div style="display: flex; align-items: flex-start;">
-    <img src="AkanchaSinha.jpg" alt="Akancha Sinha" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Akancha Sinha</span><br>
-        akanchasinha@iisc.ac.in | twitter: @SinhaAkanchaa  <br>
-Growing up, I was always the curious child in the family and my fascination with Biology and the natural world was fueled by watching Nat Geo channel. Animals, nature, and the intricacies of how life adapts and evolves captivated me early on.
-Inspired by Darwin’s principle of "Survival of the Fittest," I chose this dynamic lab as the ideal place to kickstart my journey as a researcher. My work here allows me to dive deep into Evolutionary Biology and Genetics.
-Outside the lab, you'll find me in my kitchen, singing while cooking food that I like. I spend my weekends doing cafe hopping with my sister.<br>
-Research interests: Evolutionary Biology, Genetics, Population Genomics.<br>
-Education: MSc. Biotechnology, Dr. D.Y.Patil Vidyapeeth, Pune (2024) | BSc. Hons. Biotechnology, M.S. Ramaiah University of Applied Science, Bangalore (2022)<br>    
-    </div>
-</div>
-
-<p> </p>            
-<div style="display: flex; align-items: flex-start;">
-    <img src="Nithin_KA.jpg" alt="Nithin KA" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Nithin KA</span><br>
-        nithinka25@gmail.com | twitter: @nn_nithin <br>
-I developed a strong interest in ecology and evolution through my undergraduate and masters
-coursework. My fascination with this subject led me to Anubhab’s group at IISc where I hope to
-learn more about the topic while working as a Junior Research Fellow. I will be running
-population genetics simulations to investigate how small populations adapt and survive.
-Additionally, I will be working on developing a machine learning algorithm to identify big cats in
-the wild, contributing to conservation efforts. Outside the lab, I enjoy long walks, hiking, savoring
-a good cup of tea, and spending my weekends watching football and Formula 1.<br>
-Research Interests: Evolutionary Biology, Population Genetics, Machine Learning <br>
-Education: BS-MS Dual Degree (Biology) , IISER Thiruvananthapuram (2024)<br>    
-    </div>
-</div>
-<p></p>
-            
-  <div style="display: flex; align-items: flex-start;">
-    <img src="prarthana.jpg" alt="Prarthana Goswami" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Prarthana Goswami</span><br>
-        prarthana.goswami83@gmail.com <br>   
-        Hey there!! I am Prathana Goswami, a molecular ecology and taxonomy enthusiast. I am pursuing my PhD on molecular taxonomy and ecology of Lepidoptera. The vibrant butterflies captivate everyone. But the dull one always left out. Therefore, systematic revision, study of cryptic species, variations and polymorphism of brown dull butterflies specially from Subfamily Satyrinae are of interest to me. My field of study is the Northeast region of India, which is a very special geographical location. Their flora and fauna are quite different from those of mainland India. In the molecular wet lab, I have also worked with a variety of taxa, including non-invasive samples from vertebrates and non-invertebrates. When I am not in my lab, I like to spend my time with my little daughter Dakshayani and love to host people in my humble adobe. I am a trained Kathak dancer, if time permits ghungroo is my way to unwind. </br>
-        Education: M.Sc. in Biotechnology (Specialization Molecular Biology) from North Eastern Hill University. (2018)
-    </div>
-</div>
-<p></p>
-
- <div style="display: flex; align-items: flex-start;">
-    <img src="Meenakshi.jpg" alt="Meenakshi" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Meenakshi</span><br>
-        Meenakshi070902@gmail.com <br>   
-        When I was little, while most kids dreamed of being princesses or rockstars, I would proudly say I wanted to be a paleontologist. Natural history has always been my first love—Though I eventually chose Biotechnology, my passion has never drifted far from evolution, diversity, speciation, and extinction. Work that bridges the two always catches my attention. I also have an unusual fascination with reptiles. Outside academics, I’m always crouching over some quirky art project. I’ve also been trying to write music on my ukulele. I love being outdoors and whenever I stumble upon yummy food I do my happy dance. <br>
-        Research interests: Evolutionary Biology, Natural History, Conservation Genomics.
-        Education: Bsc. Hons. in Biotechnology, VIT vellore.
-    </div>
-</div>
-<p></p>
-
-    <div style="display: flex; align-items: flex-start;">
-    <img src="Anusrita.jpg" alt="Anusrita Dutta" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Anusrita Dutta</span><br>
-        anusrita.dutta2026@gmail.com <br>   
-       Hello, I’m Anusrita Dutta, which means — “one who follows and learns from others”—deeply resonates with my journey as a young environmental enthusiast. Coming from a social science background, I initially felt like an “invasive species” on my first day in the lab. However, with time, I have been making efforts to gradually adapt to this new environment. My primary interest lies in examining the social science dimensions of wildlife, how humans and non-humans interact with each other, with a particular interest in tigers. One of my aspirations is to observe all Panthera species in the wild. I strongly believe that materialistic humans play a central role in many of the challenges confronting the natural world, and this belief continues to guide my academic and professional pursuits. Beyond research, I am passionate about sports, especially cricket, football, and tennis, which energise me outside of work. I remain committed to learning, growing, and exploring as I continue this journey.</br>
-       Research Interest: Human-Non-Human Interaction, Environmental sustainability and climate change mitigation <br>
-        Education: M.A. in Ecology, Environment and Sustainable Development, TISS Guwahati
-    </div>
-</div>
-<p></p>
-            
-  <h2>People from collaborations</h2>
-  <div style="display: flex; align-items: flex-start;">
-    <img src="Bramhi_fullRes.jpg" alt="Bramhi Chougule" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Bramhi Chougule</span><br>
-        chougulebramhi@gmail.com | twitter:  <br>
-Understanding the genetic makeup and population dynamics of endangered species is crucial for their conservation. My research focuses on the population genetics of the endangered Kondana Soft-furred Rat. By studying its population size, gene flow, genetic differentiation, genetic diversity, and inbreeding, I aim to gather insights that will aid in the protection and management of this species. Environmental pressures and human activities pose significant threats to its survival, making this research vital for developing effective conservation strategies.<br>
-Research interests: Population genetics, Conservation genetics, Phylogenetics, Ecology and Evolution.<br>
-Education: MSc in Biotechnology, Jain University, Bangalore (2022)<br>    
-    </div>
-</div>
-
-<p></p> 
-<div style="display: flex; align-items: flex-start;">
-    <img src="Ramya_Roopa_S.jpg" alt="Ramya Roopa S" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Ramya Roopa S</span><br>
-        ramya@wctindia.org | website: <a href="https://ramyaroopa.co.in/">ramyaroopa.co.in</a>  <br>
-I am an ecologist working with Wildlife Conservation Trust. I study the population ecology and threats associated with endangered riverine species, such as freshwater turtles, Ganges river dolphins, and gharials, using a combination of statistical modelling, remote sensing and genetic tools. I have a special interest in understanding the ecological impacts of hunting and trade on wildlife and have been studying this issue for freshwater turtles. Due to their low population densities and elusive behaviour, visual encounter surveys alone are often insufficient for monitoring the populations of freshwater turtles. In the PoODL lab, I am testing the utility of environmental DNA to estimate the occupancy of several endangered freshwater turtle species in the Gangetic basin.<br>
-Research interests: Population ecology, Ecological modelling, Conservation biology, Hunting and wildlife trade, Genetic methods.<br>
-Education: Education: Erasmus-Mundus International Master in Applied Ecology (2018) | BSc. Environmental Science, Fergusson College (2015)<br>    
-    </div>
-</div>
-<p></p>
-            
-  <h2> Personnel liaison</h2>
-  <div style="display: flex; align-items: flex-start;">
-    <img src="Debby_fullRes.jpg" alt="Deborah Davy" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Deborah Davy</span><br>
-        debbie.exmoors@yahoo.com | twitter: @deborahdavy5 <br>
-The majestic horse is Killbride. Deborah will introduce herself soon<br>
-Education: PhD, University of Glasgow (2024)<br>    
-    </div>
-</div>
-
-<p></p>
-  <h2>Lab Manager</h2>
-  <div style="display: flex; align-items: flex-start;">
-    <img src="Manjunatha.jpg" alt="Manjunatha" style="width: 250px; height: auto; margin-right: 10px;">
-    <div>
-        <span style="font-size: 24px; font-weight: bold;">Manjunatha</span><br>            
-</div>
-</div>
-</div>
-
-        
-        <!-- Sidebar for updates -->
-        <div class="sidebar">
-            <h2>Lab Updates</h2>
-            <ul>
-                <li>Haradhan Ruidas received the DBT-CTEP Travel Grant to attend and present in the International Congress for Conservation Biology 2025 (ICCB 2025) in Brisbane, Australia</li>
-                <li><a href="members.html">Meet the first members of our lab </a> </li>
-                 <li>We received the ANRF Early Career Grant to study evolution of body size in monitor lizards </li>
-                <li><a href="https://www.thehabitatstrust.org/indian-institute-of-science.php">We received the THT Conservation Grant 2024 with Umesh Srinivasan lab to study the critically endangered Bugun Liocichla</a> </li>
-                <li><a href="lab_photos.html">PoODL members at SCCS, Bangalore 2024 </a> </li>
-                <li>Upcoming workshop on wildlife genomics scheduled for March.</li>
-            </ul>
+    <!-- Main content -->
+    <main class="main-content">
+      <h1 class="section-title">Lab Photos</h1>
+      
+      <!-- Slider 1: General Lab Photos -->
+      <section class="slider-container">
+        <h2 class="section-title">General Lab Photos</h2>
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="photos/lab1.jpg" alt="Lab setup">
+              <div class="caption">Our molecular lab setup</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="photos/lab2.jpg" alt="Team working">
+              <div class="caption">Team members at work</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="photos/lab3.jpg" alt="Equipment">
+              <div class="caption">Newly installed equipment</div>
+            </div>
+          </div>
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-    </div>
+      </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Population and Organism Diversity Laboratory. All rights reserved. | <a href="contact.html">Contact</a></p>
-    </footer>
+      <!-- Slider 2: Workshop Conductance Photos -->
+      <section class="slider-container">
+        <h2 class="section-title">Workshop Conductance</h2>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="photos/workshop1.jpg" alt="Workshop intro">
+              <div class="caption">Workshop introduction session</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="photos/workshop2.jpg" alt="Hands-on session">
+              <div class="caption">Hands-on training</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="photos/workshop3.jpg" alt="Group discussion">
+              <div class="caption">Group discussion with participants</div>
+            </div>
+          </div>
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+  </div>
 
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize first slider
+    var swiper1 = new Swiper(".mySwiper1", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    // Initialize second slider
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
-
 </html>

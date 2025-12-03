@@ -76,10 +76,14 @@
       transform: scale(1.05);
     }
 
+    /* Main layout */
     .container {
       display: flex;
       flex-direction: column;
-      margin: 0 20px;
+      max-width: 1200px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+      gap: 20px; /* consistent gap between main and sidebar */
     }
 
     .main-content {
@@ -87,7 +91,6 @@
       padding: 20px;
       background-color: #ffffff;
       border-radius: 5px;
-      margin-bottom: 20px;
     }
 
     .sidebar {
@@ -95,7 +98,22 @@
       background-color: #ecf0f1;
       padding: 20px;
       border-radius: 5px;
-      margin-bottom: 40px;
+    }
+
+    /* Sidebar internal spacing */
+    .sidebar h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .sidebar ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .sidebar li + li {
+      margin-top: 8px; /* uniform vertical spacing between updates */
     }
 
     h2.section-title {
@@ -173,6 +191,7 @@
       padding: 20px;
       text-align: center;
       width: 100%;
+      margin-top: auto;
     }
 
     footer a {
@@ -184,14 +203,15 @@
       text-decoration: underline;
     }
 
+    /* Desktop layout */
     @media (min-width: 768px) {
       .container {
         flex-direction: row;
+        align-items: flex-start; /* top-align main and sidebar */
       }
 
       .sidebar {
-        width: 250px;
-        margin-left: 20px;
+        width: 280px;
       }
 
       .main-content {
@@ -199,11 +219,8 @@
       }
     }
 
+    /* Mobile layout */
     @media (max-width: 767px) {
-      .sidebar {
-        width: 100%;
-      }
-
       nav {
         flex-direction: column;
         align-items: center;
@@ -212,6 +229,10 @@
       nav a {
         width: 100%;
         max-width: 300px;
+      }
+
+      .sidebar {
+        width: 100%;
       }
     }
   </style>
@@ -241,36 +262,35 @@
 
       <!-- LAB PHOTOS SLIDER -->
       <h2 class="section-title">Lab Photos</h2>
-<div class="slider" id="labSlider">
-  <div class="slide active">
-    <img src="wayanad1.jpeg" alt="Wayanad October 2025">
-    <p class="caption">Left to right: Nithin and Sakhi at Forest Veterinary Office, Sulthan bathery, Wayanad, Kerala (Nov 2025)</p>
-  </div>
+      <div class="slider" id="labSlider">
+        <div class="slide active">
+          <img src="wayanad1.jpeg" alt="Wayanad November 2025">
+          <p class="caption">Left to right: Nithin and Sakhi at Forest Veterinary Office, Sulthan Bathery, Wayanad, Kerala (Nov 2025)</p>
+        </div>
 
-  <div class="slide">
-    <img src="wayanad2.jpeg" alt="Wayanad October 2025">
-    <p class="caption">Left to right: Alex, Sakhi and Nithin at Wayanad, Kerala (Nov 2025)</p>
-  </div>
+        <div class="slide">
+          <img src="wayanad2.jpeg" alt="Wayanad November 2025">
+          <p class="caption">Left to right: Alex, Sakhi and Nithin at Wayanad, Kerala (Nov 2025)</p>
+        </div>
 
-  <div class="slide">
-    <img src="Dublagudi_beach.jpg" alt="Balasore August 2025">
-    <p class="caption">Left to right: Aayushi, Haradhan and Anubhab at Dublagadi beach, Odisha (Aug 2025)</p>
-  </div>
+        <div class="slide">
+          <img src="Dublagadi_beach.jpg" alt="Balasore August 2025">
+          <p class="caption">Left to right: Aayushi, Haradhan and Anubhab at Dublagadi beach, Odisha (Aug 2025)</p>
+        </div>
 
-  <div class="slide">
-    <img src="dublagadi_beach2.jpg" alt="Balasore August 2025">
-    <p class="caption">Left to right: Pranav, Aayushi, Anubhab and Haradhan at Dublagadi beach, Odisha (Aug 2025)</p>
-  </div>
+        <div class="slide">
+          <img src="dublagudi_beach2.jpg" alt="Balasore August 2025">
+          <p class="caption">Left to right: Pranav, Aayushi, Anubhab and Haradhan at Dublagadi beach, Odisha (Aug 2025)</p>
+        </div>
 
-  <div class="slide">
-    <img src="SCCS_2024.jpg" alt="SCCS 2024">
-    <p class="caption">PoODL members at SCCS, Bengaluru (2024)</p>
-  </div>
+        <div class="slide">
+          <img src="SCCS_2024.jpg" alt="SCCS 2024">
+          <p class="caption">PoODL members at SCCS, Bengaluru (2024)</p>
+        </div>
 
-  <button class="prev" onclick="changeSlide(-1, 'labSlider')">&#10094;</button>
-  <button class="next" onclick="changeSlide(1, 'labSlider')">&#10095;</button>
-</div>
-
+        <button class="prev" onclick="changeSlide(-1, 'labSlider')">&#10094;</button>
+        <button class="next" onclick="changeSlide(1, 'labSlider')">&#10095;</button>
+      </div>
 
       <!-- WORKSHOP PHOTOS SLIDER -->
       <h2 class="section-title">Workshop Photos</h2>
@@ -293,7 +313,7 @@
     <aside class="sidebar">
       <h2>Lab Updates</h2>
       <ul>
-          <li>We received the Schmidt sciences AI in science global faculty fellowship to measure phenotypes of wild tigers using photographs and machine learning approaches</li>
+        <li>We received the Schmidt Sciences AI in Science Global Faculty Fellowship to measure phenotypes of wild tigers using photographs and machine learning approaches.</li>
         <li>Haradhan Ruidas received the DBT-CTEP Travel Grant to attend and present at ICCB 2025 in Brisbane, Australia.</li>
         <li><a href="members.html">Meet the first members of our lab</a></li>
         <li>We received the ANRF Early Career Grant to study the evolution of body size in monitor lizards.</li>

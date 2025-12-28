@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Anubhab Khan leads the Population and Organism Diversity Lab at the Indian Institute of Science. Learn about his research in wildlife genomics and conservation biology.">
+  <meta name="description"
+    content="Anubhab Khan leads the Population and Organism Diversity Lab at the Indian Institute of Science. Learn about his research in wildlife genomics and conservation biology.">
   <title>Anubhab Khan | Population and Organism Diversity Laboratory</title>
 
   <style>
-    /* Basic Reset */
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
     }
 
     body {
@@ -47,7 +47,6 @@
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
       padding: 0 20px;
       max-width: 90%;
-      white-space: normal;
       text-align: center;
     }
 
@@ -64,10 +63,9 @@
       background-color: #2980b9;
       color: white;
       border-radius: 5px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
       margin: 5px;
       text-decoration: none;
-      flex-grow: 1;
+      transition: background-color 0.3s, transform 0.3s;
       min-width: 120px;
     }
 
@@ -76,49 +74,42 @@
       transform: scale(1.05);
     }
 
-    /* Main layout */
     .container {
       display: flex;
       flex-direction: column;
       max-width: 1200px;
       margin: 0 auto 40px;
       padding: 0 20px;
-      gap: 20px; /* consistent gap between main and sidebar */
+      gap: 20px;
     }
 
     .main-content {
       flex: 1;
       padding: 20px;
-      background-color: #ffffff;
+      background: #fff;
       border-radius: 5px;
     }
 
     .sidebar {
-      width: 100%;
-      background-color: #ecf0f1;
+      background: #ecf0f1;
       padding: 20px;
       border-radius: 5px;
     }
 
-    /* Sidebar internal spacing */
     .sidebar h2 {
-      margin-top: 0;
       margin-bottom: 12px;
     }
 
     .sidebar ul {
-      list-style-type: disc;
       padding-left: 20px;
-      margin: 0;
     }
 
     .sidebar li + li {
-      margin-top: 8px; /* uniform vertical spacing between updates */
+      margin-top: 8px;
     }
 
     h2.section-title {
       margin: 30px auto 10px;
-      max-width: 900px;
       text-align: center;
       font-size: 1.6rem;
       color: #2c3e50;
@@ -131,15 +122,14 @@
       text-align: center;
     }
 
-    /* Slider styles */
     .slider {
       position: relative;
       max-width: 900px;
       margin: 20px auto;
-      overflow: hidden;
       background: #fff;
       border-radius: 10px;
       padding: 20px;
+      overflow: hidden;
     }
 
     .slide {
@@ -162,19 +152,16 @@
       position: absolute;
       top: 45%;
       padding: 12px;
-      color: white;
-      font-weight: bold;
       font-size: 22px;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
       border: none;
       border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.5);
-      user-select: none;
-      transition: background 0.3s;
     }
 
     .prev:hover,
     .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.8);
     }
 
     .prev {
@@ -186,11 +173,10 @@
     }
 
     footer {
-      background-color: #2c3e50;
+      background: #2c3e50;
       color: white;
       padding: 20px;
       text-align: center;
-      width: 100%;
       margin-top: auto;
     }
 
@@ -203,49 +189,29 @@
       text-decoration: underline;
     }
 
-    /* Desktop layout */
     @media (min-width: 768px) {
       .container {
         flex-direction: row;
-        align-items: flex-start; /* top-align main and sidebar */
       }
 
       .sidebar {
         width: 280px;
-      }
-
-      .main-content {
-        flex: 1;
-      }
-    }
-
-    /* Mobile layout */
-    @media (max-width: 767px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav a {
-        width: 100%;
-        max-width: 300px;
-      }
-
-      .sidebar {
-        width: 100%;
       }
     }
   </style>
 </head>
 
 <body>
+
   <header>
     <img src="./Header_picture.jpg" alt="Header Image">
     <h1>Population and Organism Diversity Laboratory</h1>
   </header>
 
   <div class="container">
+
     <div class="main-content">
+
       <nav>
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
@@ -260,17 +226,18 @@
 
       <hr>
 
-      <!-- LAB PHOTOS SLIDER -->
+      <!-- LAB PHOTOS -->
       <h2 class="section-title">Lab Photos</h2>
       <div class="slider" id="labSlider">
+
         <div class="slide active">
-          
-<img src="coorg_trip.jpeg" alt="Coorg December 2025">
+          <img src="coorg_trip.jpeg" alt="Coorg December 2025">
           <p class="caption">PoODL members at Coorg, Madikeri, Karnataka (December 2025)</p>
         </div>
-          
+
+        <div class="slide">
           <img src="wayanad1.jpeg" alt="Wayanad November 2025">
-          <p class="caption">Left to right: Nithin and Sakhi at Forest Veterinary Office, Sulthan Bathery, Wayanad, Kerala (Nov 2025)</p>
+          <p class="caption">Left to right: Nithin and Sakhi at Sulthan Bathery, Wayanad (Nov 2025)</p>
         </div>
 
         <div class="slide">
@@ -278,7 +245,7 @@
           <p class="caption">Left to right: Alex, Sakhi and Nithin at Wayanad, Kerala (Nov 2025)</p>
         </div>
 
-         <div class="slide">
+        <div class="slide">
           <img src="sccs_2025.jpg" alt="SCCS 2025">
           <p class="caption">PoODL members at SCCS, Bengaluru (2025)</p>
         </div>
@@ -298,80 +265,69 @@
           <p class="caption">PoODL members at SCCS, Bengaluru (2024)</p>
         </div>
 
-        <button class="prev" onclick="changeSlide(-1, 'labSlider')">&#10094;</button>
-        <button class="next" onclick="changeSlide(1, 'labSlider')">&#10095;</button>
+        <button class="prev" onclick="changeSlide(-1,'labSlider')">&#10094;</button>
+        <button class="next" onclick="changeSlide(1,'labSlider')">&#10095;</button>
       </div>
 
-      <!-- WORKSHOP PHOTOS SLIDER -->
+      <!-- WORKSHOP PHOTOS -->
       <h2 class="section-title">Workshop Photos</h2>
       <div class="slider" id="workshopSlider">
-        <div class="slide active">
 
-           <img src="yenepoya_workshop.jpg" alt="Workshop Yenepoya December 2025">
-          <p class="caption">Hands-on training on Next-Generation Sequencing, Yenepoya Research Centre, Mangalore (Dec 2025)</p>
+        <div class="slide active">
+          <img src="yenepoya_workshop.jpg" alt="Workshop Yenepoya December 2025">
+          <p class="caption">NGS hands-on training, Yenepoya Research Centre, Mangalore (Dec 2025)</p>
         </div>
-        
+
+        <div class="slide">
           <img src="20250821_093147480_iOS.jpg" alt="Workshop Balasore August 2025">
-          <p class="caption">Hands-on training on Conservation Genomics, Fakir Mohan University, Balasore (Aug 2025)</p>
+          <p class="caption">Conservation Genomics workshop, Fakir Mohan University, Balasore (Aug 2025)</p>
         </div>
+
         <div class="slide">
           <img src="gias_ncbs.jpg" alt="GIAS NCBS Bengaluru 2025">
-          <p class="caption">PoODL members at Genome Informatics Across Scales, NCBS Bengaluru (2025)</p>
+          <p class="caption">PoODL members at GIAS, NCBS Bengaluru (2025)</p>
         </div>
-        <!-- add more workshop slides here -->
-        <button class="prev" onclick="changeSlide(-1, 'workshopSlider')">&#10094;</button>
-        <button class="next" onclick="changeSlide(1, 'workshopSlider')">&#10095;</button>
+
+        <button class="prev" onclick="changeSlide(-1,'workshopSlider')">&#10094;</button>
+        <button class="next" onclick="changeSlide(1,'workshopSlider')">&#10095;</button>
       </div>
+
     </div>
 
-    <!-- Sidebar -->
     <aside class="sidebar">
       <h2>Lab Updates</h2>
       <ul>
-        <li>We received the Schmidt Sciences AI in Science Global Faculty Fellowship to measure phenotypes of wild tigers using photographs and machine learning approaches.</li>
-        <li>Haradhan Ruidas received the DBT-CTEP Travel Grant to attend and present at ICCB 2025 in Brisbane, Australia.</li>
+        <li>Schmidt Sciences AI in Science Global Faculty Fellowship awarded.</li>
+        <li>Haradhan Ruidas received DBT-CTEP Travel Grant (ICCB 2025).</li>
         <li><a href="members.html">Meet the first members of our lab</a></li>
-        <li>We received the ANRF Early Career Grant to study the evolution of body size in monitor lizards.</li>
-        <li><a href="https://www.thehabitatstrust.org/indian-institute-of-science.php">THT Conservation Grant 2024 with Umesh Srinivasan lab for Bugun Liocichla study</a></li>
-        
+        <li>ANRF Early Career Grant on body size evolution in monitor lizards.</li>
+        <li><a href="https://www.thehabitatstrust.org/indian-institute-of-science.php">THT Conservation Grant 2024</a></li>
       </ul>
     </aside>
+
   </div>
 
   <footer>
-    <p>&copy; 2024 Population and Organism Diversity Laboratory. All rights reserved. | <a href="contact.html">Contact</a></p>
+    <p>&copy; 2024 Population and Organism Diversity Laboratory | <a href="contact.html">Contact</a></p>
   </footer>
 
-  <!-- Slider Script -->
   <script>
-    // Store separate indexes for each slider
-    let slideIndexes = {
-      labSlider: 0,
-      workshopSlider: 0
-    };
+    let slideIndexes = { labSlider: 0, workshopSlider: 0 };
 
-    function showSlide(index, sliderId) {
-      const slider = document.getElementById(sliderId);
-      const slides = slider.querySelectorAll(".slide");
-      slides.forEach((slide, i) => {
-        slide.classList.remove("active");
-        if (i === index) slide.classList.add("active");
-      });
+    function showSlide(index, id) {
+      const slides = document.getElementById(id).querySelectorAll(".slide");
+      slides.forEach((s, i) => s.classList.toggle("active", i === index));
     }
 
-    function changeSlide(n, sliderId) {
-      const slider = document.getElementById(sliderId);
-      const slides = slider.querySelectorAll(".slide");
-      slideIndexes[sliderId] += n;
-      if (slideIndexes[sliderId] >= slides.length) slideIndexes[sliderId] = 0;
-      if (slideIndexes[sliderId] < 0) slideIndexes[sliderId] = slides.length - 1;
-      showSlide(slideIndexes[sliderId], sliderId);
+    function changeSlide(n, id) {
+      const slides = document.getElementById(id).querySelectorAll(".slide");
+      slideIndexes[id] = (slideIndexes[id] + n + slides.length) % slides.length;
+      showSlide(slideIndexes[id], id);
     }
 
-    // Initialize sliders
-    showSlide(slideIndexes.labSlider, "labSlider");
-    showSlide(slideIndexes.workshopSlider, "workshopSlider");
+    showSlide(0, "labSlider");
+    showSlide(0, "workshopSlider");
   </script>
-</body>
 
+</body>
 </html>

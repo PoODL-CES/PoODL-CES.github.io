@@ -3,14 +3,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <meta name="description"
     content="Meet the members of the Population and Organism Diversity Laboratory at the Indian Institute of Science.">
 
 <title>Members | Population and Organism Diversity Laboratory</title>
+
 
 <style>
 
@@ -71,6 +73,7 @@
         transform: translate(-50%, -50%);
 
         width: 90%;
+
         font-size: clamp(28px, 4vw, 52px);
         line-height: 1.2;
 
@@ -85,18 +88,23 @@
     .container {
         display: flex;
         gap: 25px;
+
         max-width: 1500px;
         margin: 30px auto;
         padding: 0 20px;
+
         align-items: flex-start;
     }
 
     .main-content {
         flex: 1;
         min-width: 0;
+
         background: #ffffff;
         border-radius: 10px;
+
         padding: 30px;
+
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     }
 
@@ -105,6 +113,7 @@
         flex: 0 0 280px;
 
         background-color: #ecf0f1;
+
         padding: 25px;
 
         border-radius: 10px;
@@ -122,17 +131,22 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+
         gap: 8px;
+
         margin-bottom: 30px;
     }
 
     nav a {
         padding: 10px 16px;
+
         background-color: #2980b9;
         color: white;
+
         border-radius: 6px;
 
         font-size: 15px;
+
         transition: 0.25s ease;
     }
 
@@ -143,29 +157,34 @@
 
 
     /* =========================================================
-       PAGE TITLE
+       PAGE INTRO
     ========================================================= */
 
     .page-intro {
         text-align: center;
+
         max-width: 850px;
+
         margin: 10px auto 45px;
     }
 
     .page-intro h2 {
         font-size: 34px;
+
         color: #2c3e50;
+
         margin-bottom: 12px;
     }
 
     .page-intro p {
         font-size: 17px;
+
         color: #666;
     }
 
 
     /* =========================================================
-       MEMBER SECTION
+       MEMBER SECTIONS
     ========================================================= */
 
     .member-section {
@@ -174,7 +193,9 @@
 
     .section-title {
         display: flex;
+
         align-items: center;
+
         gap: 15px;
 
         margin-bottom: 25px;
@@ -182,14 +203,19 @@
 
     .section-title h2 {
         color: #2c3e50;
+
         font-size: 27px;
+
         white-space: nowrap;
     }
 
     .section-title::after {
         content: "";
+
         height: 2px;
+
         background: #dce3e7;
+
         flex: 1;
     }
 
@@ -200,7 +226,10 @@
 
     .member-grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
         gap: 25px;
     }
 
@@ -211,8 +240,11 @@
 
     .member-card {
         background: #ffffff;
+
         border: 1px solid #e1e6e9;
+
         border-radius: 12px;
+
         overflow: hidden;
 
         transition:
@@ -220,46 +252,76 @@
             box-shadow 0.25s ease;
 
         display: flex;
+
         flex-direction: column;
     }
 
     .member-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+
+        box-shadow:
+            0 8px 22px rgba(0, 0, 0, 0.10);
     }
+
+
+    /* =========================================================
+       MEMBER IMAGE
+    ========================================================= */
 
     .member-image {
         width: 100%;
+
         height: 260px;
+
         object-fit: cover;
+
         object-position: center;
+
         background-color: #eef2f3;
+
+        display: block;
     }
+
+
+    /* =========================================================
+       MEMBER INFORMATION
+    ========================================================= */
 
     .member-info {
         padding: 20px;
+
         display: flex;
+
         flex-direction: column;
+
         flex: 1;
     }
 
     .member-info h3 {
         color: #2c3e50;
+
         font-size: 22px;
+
         margin-bottom: 5px;
     }
 
     .position {
         color: #2980b9;
+
         font-weight: bold;
+
         font-size: 15px;
+
         margin-bottom: 10px;
     }
 
     .research {
         color: #666;
+
         font-size: 15px;
+
         line-height: 1.5;
+
         margin-bottom: 18px;
     }
 
@@ -272,13 +334,17 @@
         margin-top: auto;
 
         border: none;
+
         background-color: #2980b9;
+
         color: white;
 
         padding: 10px 15px;
+
         border-radius: 6px;
 
         cursor: pointer;
+
         font-size: 15px;
 
         transition: 0.25s ease;
@@ -295,11 +361,14 @@
 
     .profile-details {
         max-height: 0;
+
         overflow: hidden;
 
-        transition: max-height 0.4s ease;
+        transition:
+            max-height 0.4s ease;
 
         background-color: #f8fafb;
+
         border-top: 1px solid #e4e8ea;
     }
 
@@ -309,8 +378,11 @@
 
     .profile-details p {
         font-size: 15px;
+
         line-height: 1.7;
+
         margin-bottom: 12px;
+
         color: #444;
     }
 
@@ -318,18 +390,30 @@
         color: #2c3e50;
     }
 
+
+    /* =========================================================
+       CONTACT LINKS
+    ========================================================= */
+
     .contact-links {
         margin-top: 15px;
+
         display: flex;
+
         flex-wrap: wrap;
+
         gap: 8px;
     }
 
     .contact-links a {
         background-color: #2c3e50;
+
         color: white;
+
         padding: 7px 11px;
+
         border-radius: 5px;
+
         font-size: 13px;
     }
 
@@ -344,7 +428,9 @@
 
     .sidebar h2 {
         color: #2c3e50;
+
         margin-bottom: 20px;
+
         font-size: 24px;
     }
 
@@ -354,8 +440,12 @@
 
     .sidebar li {
         padding: 14px 0;
-        border-bottom: 1px solid #d6dcdf;
+
+        border-bottom:
+            1px solid #d6dcdf;
+
         font-size: 14px;
+
         line-height: 1.6;
     }
 
@@ -365,6 +455,7 @@
 
     .sidebar a {
         color: #2980b9;
+
         font-weight: bold;
     }
 
@@ -374,15 +465,38 @@
 
 
     /* =========================================================
-       EMPTY / FUTURE MEMBERS
+       SIMPLE MEMBERS WITHOUT PHOTOS
     ========================================================= */
 
-    .empty-section {
-        text-align: center;
-        padding: 30px;
-        background: #f8fafb;
+    .simple-card {
+        background: #ffffff;
+
+        border: 1px solid #e1e6e9;
+
         border-radius: 10px;
-        color: #777;
+
+        padding: 20px;
+
+        transition: 0.25s ease;
+    }
+
+    .simple-card:hover {
+        transform: translateY(-3px);
+
+        box-shadow:
+            0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .simple-card h3 {
+        color: #2c3e50;
+
+        margin-bottom: 5px;
+    }
+
+    .simple-card p {
+        color: #666;
+
+        font-size: 14px;
     }
 
 
@@ -392,14 +506,19 @@
 
     footer {
         background-color: #2c3e50;
+
         color: white;
+
         padding: 25px 20px;
+
         text-align: center;
+
         margin-top: 30px;
     }
 
     footer p {
         margin: 0;
+
         font-size: 14px;
     }
 
@@ -419,11 +538,13 @@
     @media (max-width: 1100px) {
 
         .member-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
         }
 
         .sidebar {
             width: 250px;
+
             flex-basis: 250px;
         }
     }
@@ -441,11 +562,13 @@
 
         .main-content {
             width: 100%;
+
             padding: 20px;
         }
 
         .sidebar {
             width: 100%;
+
             position: static;
         }
 
@@ -475,6 +598,7 @@
 
         nav a {
             width: 100%;
+
             text-align: center;
         }
 
@@ -525,34 +649,46 @@
     <main class="main-content">
 
 
-        <!-- NAVIGATION -->
+        <!-- =================================================
+             NAVIGATION
+        ================================================== -->
 
         <nav>
 
             <a href="index.html">Home</a>
+
             <a href="research.html">Research</a>
+
             <a href="teaching.html">Teaching</a>
+
             <a href="members.html">Members</a>
+
             <a href="publications.html">Publications</a>
+
             <a href="positions.html">Positions</a>
+
             <a href="workshops.html">Workshops</a>
+
             <a href="contact.html">Contact</a>
+
             <a href="lab_photos.html">Lab Photos</a>
 
         </nav>
 
 
-        <!-- INTRODUCTION -->
+        <!-- =================================================
+             PAGE INTRO
+        ================================================== -->
 
         <section class="page-intro">
 
             <h2>Meet Our People</h2>
 
             <p>
-                The Population and Organism Diversity Laboratory brings together
-                researchers, students, project staff, collaborators and interns
-                working across evolutionary biology, population genomics,
-                wildlife genetics and conservation biology.
+                The Population and Organism Diversity Laboratory brings
+                together researchers, students, project staff, collaborators
+                and interns working across evolutionary biology, population
+                genomics, wildlife genetics and conservation biology.
             </p>
 
         </section>
@@ -566,7 +702,9 @@
         <section class="member-section">
 
             <div class="section-title">
+
                 <h2>Faculty</h2>
+
             </div>
 
 
@@ -577,13 +715,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="Anubhab_fullRes.jpg"
-                         alt="Anubhab Khan">
+                    <img
+                        class="member-image"
+                        src="Anubhab_fullRes.jpg"
+                        alt="Anubhab Khan"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Anubhab Khan</h3>
+                        <h3>
+                            Anubhab Khan
+                        </h3>
 
                         <div class="position">
                             Principal Investigator
@@ -594,8 +736,10 @@
                             Wildlife genomics · Conservation biology
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -607,16 +751,18 @@
                         <div class="profile-details-inner">
 
                             <p>
-                                I am interested in understanding trait evolution,
-                                extinction and survival of populations. I like
-                                developing and optimizing methods for making
-                                wildlife genomics accessible to all.
+                                I am interested in understanding trait
+                                evolution, extinction and survival of
+                                populations. I like developing and
+                                optimizing methods for making wildlife
+                                genomics accessible to all.
                             </p>
 
                             <p>
-                                I have been conducting and teaching in various
-                                workshops to train academicians, managers and
-                                conservationists in wildlife genetics.
+                                I have been conducting and teaching in
+                                various workshops to train academicians,
+                                managers and conservationists in wildlife
+                                genetics.
                             </p>
 
                             <p>
@@ -649,6 +795,135 @@
 
                 </article>
 
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             POSTDOCTORAL RESEARCHERS
+        ================================================== -->
+
+        <section class="member-section">
+
+            <div class="section-title">
+
+                <h2>
+                    Postdoctoral Researchers
+                </h2>
+
+            </div>
+
+
+            <div class="member-grid">
+
+
+                <!-- BISWAJIT PANDA -->
+
+                <article class="member-card">
+
+                    <img
+                        class="member-image"
+                        src="https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/biswajit.jpeg"
+                        alt="Biswajit Panda"
+                    >
+
+                    <div class="member-info">
+
+                        <h3>
+                            Biswajit Panda
+                        </h3>
+
+                        <div class="position">
+                            Postdoctoral Researcher
+                        </div>
+
+                        <div class="research">
+                            Evolutionary genomics · Comparative genomics ·
+                            Conservation genomics · Phylogenomics
+                        </div>
+
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
+                            View Profile
+                        </button>
+
+                    </div>
+
+
+                    <div class="profile-details">
+
+                        <div class="profile-details-inner">
+
+                            <p>
+                                I am broadly interested in evolutionary,
+                                comparative, and conservation genomics,
+                                with a focus on understanding genome
+                                evolution, gene family diversification,
+                                adaptation, and biodiversity across
+                                lineages.
+                            </p>
+
+                            <p>
+                                During my PhD at IISER Berhampur, I studied
+                                gene family evolution and chemosensory
+                                systems in diverse animal lineages using
+                                genome assembly, annotation, phylogenomics,
+                                and comparative genomics.
+                            </p>
+
+                            <p>
+                                At PoODL, IISc, I am extending these
+                                interests to conservation genomics,
+                                investigating evolutionary history,
+                                genetic diversity, and the persistence
+                                of threatened wildlife populations.
+                            </p>
+
+                            <p>
+                                Beyond research, I enjoy travelling,
+                                exploring nature and cultures, reading,
+                                writing, science communication, and
+                                community-oriented initiatives.
+                            </p>
+
+                            <p>
+                                <strong>Research Interests:</strong>
+                                Evolutionary Genomics, Comparative Genomics,
+                                Conservation Genomics, Genome Evolution,
+                                Gene Family Evolution, Phylogenomics.
+                            </p>
+
+                            <p>
+                                <strong>Education:</strong>
+                                Ph.D. in Biological Sciences,
+                                IISER Berhampur (2026) |
+                                M.Sc. in Zoology, OUAT, Bhubaneswar (2018)
+                            </p>
+
+                            <div class="contact-links">
+
+                                <a href="mailto:pandabiswajit22@gmail.com">
+                                    Email
+                                </a>
+
+                                <a
+                                    href="https://twitter.com/Biswajit_Sci"
+                                    target="_blank"
+                                >
+                                    Twitter
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
 
             </div>
 
@@ -663,7 +938,11 @@
         <section class="member-section">
 
             <div class="section-title">
-                <h2>PhD Students</h2>
+
+                <h2>
+                    PhD Students
+                </h2>
+
             </div>
 
 
@@ -674,13 +953,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="Haradhan_fullRes.jpg"
-                         alt="Haradhan Ruidas">
+                    <img
+                        class="member-image"
+                        src="Haradhan_fullRes.jpg"
+                        alt="Haradhan Ruidas"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Haradhan Ruidas</h3>
+                        <h3>
+                            Haradhan Ruidas
+                        </h3>
 
                         <div class="position">
                             PhD Student
@@ -691,8 +974,10 @@
                             Aquatic ecology · Conservation
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -741,8 +1026,10 @@
                                     Email
                                 </a>
 
-                                <a href="https://twitter.com/ruidas_haradhan"
-                                   target="_blank">
+                                <a
+                                    href="https://twitter.com/ruidas_haradhan"
+                                    target="_blank"
+                                >
                                     Twitter
                                 </a>
 
@@ -760,13 +1047,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="Pranav_fullRes.jpg"
-                         alt="Pranav Datar">
+                    <img
+                        class="member-image"
+                        src="Pranav_fullRes.jpg"
+                        alt="Pranav Datar"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Pranav Datar</h3>
+                        <h3>
+                            Pranav Datar
+                        </h3>
 
                         <div class="position">
                             PhD Student
@@ -777,8 +1068,10 @@
                             Population genomics
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -793,15 +1086,16 @@
                                 My fascination with wildlife started back
                                 in high school, where I used to spend time
                                 chasing birds and butterflies. They
-                                ignited my curiosity of how and why things
-                                are there in the way they are.
+                                ignited my curiosity about how and why
+                                things are the way they are.
                             </p>
 
                             <p>
                                 I am broadly interested in evolutionary
                                 biology, currently focusing on understanding
                                 the evolution of complex traits using size
-                                disparity in monitor lizards as a model system.
+                                disparity in monitor lizards as a model
+                                system.
                             </p>
 
                             <p>
@@ -819,7 +1113,7 @@
 
                             <p>
                                 <strong>Education:</strong>
-                                MSc, IISc, Bangalore (2024) |
+                                MSc, IISc Bangalore (2024) |
                                 BSc, Vivekanand College, Kolhapur (2022)
                             </p>
 
@@ -829,8 +1123,10 @@
                                     Email
                                 </a>
 
-                                <a href="https://twitter.com/pranavdatar3"
-                                   target="_blank">
+                                <a
+                                    href="https://twitter.com/pranavdatar3"
+                                    target="_blank"
+                                >
                                     Twitter
                                 </a>
 
@@ -848,13 +1144,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="alex.jpg"
-                         alt="Alex Mahesh">
+                    <img
+                        class="member-image"
+                        src="alex.jpg"
+                        alt="Alex Mahesh"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Alex Mahesh</h3>
+                        <h3>
+                            Alex Mahesh
+                        </h3>
 
                         <div class="position">
                             PhD Student
@@ -865,8 +1165,10 @@
                             Bat genomics
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -906,11 +1208,6 @@
                             </p>
 
                             <p>
-                                Besides academia, I play outdoor games,
-                                with hockey and basketball being my favourites.
-                            </p>
-
-                            <p>
                                 <strong>Research Interests:</strong>
                                 Evolutionary biology, disease ecology.
                             </p>
@@ -927,12 +1224,255 @@
                                     Email
                                 </a>
 
-                                <a href="https://twitter.com/alex_mahesh_"
-                                   target="_blank">
+                                <a
+                                    href="https://twitter.com/alex_mahesh_"
+                                    target="_blank"
+                                >
                                     Twitter
                                 </a>
 
                             </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ANURAG -->
+
+                <article class="member-card">
+
+                    <img
+                        class="member-image"
+                        src="https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/anu.jpeg"
+                        alt="Anurag Chittawar"
+                    >
+
+                    <div class="member-info">
+
+                        <h3>
+                            Anurag Chittawar
+                        </h3>
+
+                        <div class="position">
+                            PhD Student
+                        </div>
+
+                        <div class="research">
+                            Evolutionary biology · Quantitative biology ·
+                            Major transitions in evolution
+                        </div>
+
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
+                            View Profile
+                        </button>
+
+                    </div>
+
+
+                    <div class="profile-details">
+
+                        <div class="profile-details-inner">
+
+                            <p>
+                                My research focuses on understanding the
+                                inheritance of quantitative traits in wild
+                                populations of tigers and developing
+                                machine learning models to extract
+                                morphometric traits from photographs
+                                and videos.
+                            </p>
+
+                            <p>
+                                Prior to joining the lab, I worked with
+                                Snowflake Yeast and <i>M. xanthus</i>,
+                                studying the evolution of symbiosis and
+                                the evolution of antibiotic resistance.
+                            </p>
+
+                            <p>
+                                In my free time I enjoy reading philosophy,
+                                cooking, sleeping and generally lazing around.
+                            </p>
+
+                            <p>
+                                <strong>Interests:</strong>
+                                Evolutionary Biology, Major Transitions
+                                in Evolution, Quantitative Biology.
+                            </p>
+
+                            <p>
+                                <strong>Education:</strong>
+                                BSc and MSc in Biology,
+                                IISc Bangalore (2026)
+                            </p>
+
+                            <div class="contact-links">
+
+                                <a href="mailto:anuchittawar@iisc.ac.in">
+                                    Email
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DIWAKAR -->
+
+                <article class="member-card">
+
+                    <img
+                        class="member-image"
+                        src="https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/diwakar.jpeg"
+                        alt="Diwakar"
+                    >
+
+                    <div class="member-info">
+
+                        <h3>
+                            Diwakar
+                        </h3>
+
+                        <div class="position">
+                            PhD Student
+                        </div>
+
+                        <div class="research">
+                            Evolution · Epigenetics · Systems biology ·
+                            Plant biology
+                        </div>
+
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
+                            View Profile
+                        </button>
+
+                    </div>
+
+
+                    <div class="profile-details">
+
+                        <div class="profile-details-inner">
+
+                            <p>
+                                The evolution of complex traits resulting
+                                in multiple phenotypes from a small set
+                                of genes through regulatory mechanisms is
+                                fascinating.
+                            </p>
+
+                            <p>
+                                I am studying this through the evolution
+                                of cancer resistance and susceptibility
+                                in cetaceans.
+                            </p>
+
+                            <p>
+                                Outside of work I am interested in having
+                                lots of tea, drowning in my own thoughts
+                                and crochet!
+                            </p>
+
+                            <p>
+                                <strong>Research Interests:</strong>
+                                Evolution, epigenetics, systems biology,
+                                plant biology.
+                            </p>
+
+                            <p>
+                                <strong>Education:</strong>
+                                BSc Biotechnology,
+                                Shiv Nadar University
+                            </p>
+
+                            <div class="contact-links">
+
+                                <a href="mailto:diwarkg@iisc.ac.in">
+                                    Email
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- DEBASMITA -->
+
+                <article class="member-card">
+
+                    <img
+                        class="member-image"
+                        src="https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/debasmita.jpeg"
+                        alt="Debasmita"
+                    >
+
+                    <div class="member-info">
+
+                        <h3>
+                            Debasmita
+                        </h3>
+
+                        <div class="position">
+                            PhD Student
+                        </div>
+
+                        <div class="research">
+                            Evolutionary genomics · Physiological traits ·
+                            Comparative biology
+                        </div>
+
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
+                            View Profile
+                        </button>
+
+                    </div>
+
+
+                    <div class="profile-details">
+
+                        <div class="profile-details-inner">
+
+                            <p>
+                                I believe nature and organisms mould each
+                                other with time. I want to understand how
+                                this relationship differentiates physiological
+                                traits in the context of diverse hunting
+                                patterns in closely related species through
+                                the lens of genomics.
+                            </p>
+
+                            <p>
+                                I enjoy working with large datasets and
+                                am curious to observe new patterns and
+                                interpretations from them.
+                            </p>
+
+                            <p>
+                                Apart from research, I am passionate
+                                about singing.
+                            </p>
 
                         </div>
 
@@ -948,13 +1488,17 @@
 
 
         <!-- =================================================
-             INTEGRATED PHD
+             INTEGRATED PHD STUDENTS
         ================================================== -->
 
         <section class="member-section">
 
             <div class="section-title">
-                <h2>Integrated PhD Students</h2>
+
+                <h2>
+                    Integrated PhD Students
+                </h2>
+
             </div>
 
 
@@ -965,13 +1509,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="Aayushi_Gupta.jpg"
-                         alt="Aayushi Gupta">
+                    <img
+                        class="member-image"
+                        src="Aayushi_Gupta.jpg"
+                        alt="Aayushi Gupta"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Aayushi Gupta</h3>
+                        <h3>
+                            Aayushi Gupta
+                        </h3>
 
                         <div class="position">
                             Integrated PhD Student
@@ -982,8 +1530,10 @@
                             Wild cat genomics
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -1038,8 +1588,10 @@
                                     Email
                                 </a>
 
-                                <a href="https://twitter.com/aayushigupta901"
-                                   target="_blank">
+                                <a
+                                    href="https://twitter.com/aayushigupta901"
+                                    target="_blank"
+                                >
                                     Twitter
                                 </a>
 
@@ -1057,13 +1609,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="sakhi_kundu.jpg"
-                         alt="Sakhi Kundu">
+                    <img
+                        class="member-image"
+                        src="sakhi_kundu.jpg"
+                        alt="Sakhi Kundu"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Sakhi Kundu</h3>
+                        <h3>
+                            Sakhi Kundu
+                        </h3>
 
                         <div class="position">
                             Integrated PhD Student
@@ -1074,8 +1630,10 @@
                             Conservation
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -1089,10 +1647,9 @@
                             <p>
                                 Evolution has always intrigued me by the
                                 way it has the power to shape the natural
-                                world. Questions like "Can we predict how
-                                a particular trait will change?" and
-                                "Can we shape evolutionary outcomes?"
-                                drive my research interests.
+                                world. Questions about predicting and
+                                shaping evolutionary outcomes drive my
+                                research interests.
                             </p>
 
                             <p>
@@ -1112,9 +1669,9 @@
                             </p>
 
                             <p>
-                                Apart from academia, I value spending time
-                                with my loved ones, exploring wildlife,
-                                humming Rabindrasangeet and simply relaxing.
+                                Apart from academia, I enjoy spending time
+                                with loved ones, exploring wildlife,
+                                humming Rabindrasangeet and relaxing.
                             </p>
 
                             <p>
@@ -1157,7 +1714,11 @@
         <section class="member-section">
 
             <div class="section-title">
-                <h2>Project Staff</h2>
+
+                <h2>
+                    Project Staff
+                </h2>
+
             </div>
 
 
@@ -1168,13 +1729,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="AkanchaSinha.jpg"
-                         alt="Akancha Sinha">
+                    <img
+                        class="member-image"
+                        src="AkanchaSinha.jpg"
+                        alt="Akancha Sinha"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Akancha Sinha</h3>
+                        <h3>
+                            Akancha Sinha
+                        </h3>
 
                         <div class="position">
                             Project Associate
@@ -1185,8 +1750,10 @@
                             Population genomics
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -1244,8 +1811,10 @@
                                     Email
                                 </a>
 
-                                <a href="https://twitter.com/SinhaAkanchaa"
-                                   target="_blank">
+                                <a
+                                    href="https://twitter.com/SinhaAkanchaa"
+                                    target="_blank"
+                                >
                                     Twitter
                                 </a>
 
@@ -1263,13 +1832,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="prarthana.jpg"
-                         alt="Prarthana Goswami">
+                    <img
+                        class="member-image"
+                        src="prarthana.jpg"
+                        alt="Prarthana Goswami"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Prarthana Goswami</h3>
+                        <h3>
+                            Prarthana Goswami
+                        </h3>
 
                         <div class="position">
                             Project Staff
@@ -1280,8 +1853,10 @@
                             Lepidoptera
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -1321,8 +1896,8 @@
 
                             <p>
                                 Outside the lab, I enjoy spending time
-                                with my daughter Dakshayani and hosting
-                                people. I am also a trained Kathak dancer.
+                                with my daughter Dakshayani, hosting
+                                people and Kathak dancing.
                             </p>
 
                             <p>
@@ -1333,7 +1908,9 @@
 
                             <div class="contact-links">
 
-                                <a href="mailto:prarthana.goswami83@gmail.com">
+                                <a
+                                    href="mailto:prarthana.goswami83@gmail.com"
+                                >
                                     Email
                                 </a>
 
@@ -1351,13 +1928,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="Anusrita.jpg"
-                         alt="Anusrita Dutta">
+                    <img
+                        class="member-image"
+                        src="Anusrita.jpg"
+                        alt="Anusrita Dutta"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Anusrita Dutta</h3>
+                        <h3>
+                            Anusrita Dutta
+                        </h3>
 
                         <div class="position">
                             Project Staff
@@ -1369,8 +1950,10 @@
                             Climate change
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -1386,8 +1969,7 @@
                                 social science background, I initially felt
                                 like an "invasive species" on my first day
                                 in the lab. With time, I have been making
-                                efforts to gradually adapt to this new
-                                environment.
+                                efforts to adapt to this new environment.
                             </p>
 
                             <p>
@@ -1425,7 +2007,9 @@
 
                             <div class="contact-links">
 
-                                <a href="mailto:anusrita.dutta2026@gmail.com">
+                                <a
+                                    href="mailto:anusrita.dutta2026@gmail.com"
+                                >
                                     Email
                                 </a>
 
@@ -1451,32 +2035,26 @@
         <section class="member-section">
 
             <div class="section-title">
-                <h2>Lab Staff</h2>
+
+                <h2>
+                    Lab Staff
+                </h2>
+
             </div>
 
 
             <div class="member-grid">
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <img class="member-image"
-                         src="Manjunatha.jpg"
-                         alt="Manjunatha">
+                    <h3>
+                        Manjunatha
+                    </h3>
 
-                    <div class="member-info">
-
-                        <h3>Manjunatha</h3>
-
-                        <div class="position">
-                            Lab Manager
-                        </div>
-
-                        <div class="research">
-                            Laboratory operations and management
-                        </div>
-
-                    </div>
+                    <p>
+                        Lab Manager
+                    </p>
 
                 </article>
 
@@ -1494,7 +2072,11 @@
         <section class="member-section">
 
             <div class="section-title">
-                <h2>Collaborators</h2>
+
+                <h2>
+                    Collaborators
+                </h2>
+
             </div>
 
 
@@ -1505,13 +2087,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="Bramhi_fullRes.jpg"
-                         alt="Bramhi Chougule">
+                    <img
+                        class="member-image"
+                        src="Bramhi_fullRes.jpg"
+                        alt="Bramhi Chougule"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Bramhi Chougule</h3>
+                        <h3>
+                            Bramhi Chougule
+                        </h3>
 
                         <div class="position">
                             Collaborator
@@ -1522,8 +2108,10 @@
                             Phylogenetics · Ecology and evolution
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -1551,14 +2139,6 @@
                             </p>
 
                             <p>
-                                Environmental pressures and human
-                                activities pose significant threats to
-                                its survival, making this research vital
-                                for developing effective conservation
-                                strategies.
-                            </p>
-
-                            <p>
                                 <strong>Research Interests:</strong>
                                 Population genetics, Conservation genetics,
                                 Phylogenetics, Ecology and Evolution.
@@ -1572,7 +2152,9 @@
 
                             <div class="contact-links">
 
-                                <a href="mailto:chougulebramhi@gmail.com">
+                                <a
+                                    href="mailto:chougulebramhi@gmail.com"
+                                >
                                     Email
                                 </a>
 
@@ -1590,13 +2172,17 @@
 
                 <article class="member-card">
 
-                    <img class="member-image"
-                         src="Debby_fullRes.jpg"
-                         alt="Deborah Davy">
+                    <img
+                        class="member-image"
+                        src="Debby_fullRes.jpg"
+                        alt="Deborah Davy"
+                    >
 
                     <div class="member-info">
 
-                        <h3>Deborah Davy</h3>
+                        <h3>
+                            Deborah Davy
+                        </h3>
 
                         <div class="position">
                             Collaborator
@@ -1607,8 +2193,10 @@
                             Population history
                         </div>
 
-                        <button class="profile-button"
-                                onclick="toggleProfile(this)">
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
                             View Profile
                         </button>
 
@@ -1631,16 +2219,211 @@
 
                             <div class="contact-links">
 
-                                <a href="mailto:debbie.exmoors@yahoo.com">
+                                <a
+                                    href="mailto:debbie.exmoors@yahoo.com"
+                                >
                                     Email
                                 </a>
 
-                                <a href="https://twitter.com/deborahdavy5"
-                                   target="_blank">
+                                <a
+                                    href="https://twitter.com/deborahdavy5"
+                                    target="_blank"
+                                >
                                     Twitter
                                 </a>
 
                             </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- APOORVA -->
+
+                <article class="member-card">
+
+                    <img
+                        class="member-image"
+                        src="https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/Apoorva.jpeg"
+                        alt="Apoorva Sodhi"
+                    >
+
+                    <div class="member-info">
+
+                        <h3>
+                            Apoorva Sodhi
+                        </h3>
+
+                        <div class="position">
+                            Collaborator
+                        </div>
+
+                        <div class="research">
+                            Conservation genomics · Molecular ecology ·
+                            Population genetics · Freshwater ecology
+                        </div>
+
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
+                            View Profile
+                        </button>
+
+                    </div>
+
+
+                    <div class="profile-details">
+
+                        <div class="profile-details-inner">
+
+                            <p>
+                                My interest in wildlife began with a
+                                fascination for animal behaviour and
+                                developed into a broader interest in
+                                ecology and conservation.
+                            </p>
+
+                            <p>
+                                I am currently a doctoral fellow at the
+                                Centre for Wildlife Studies and collaborate
+                                with PoODL on research assessing otter
+                                population health across freshwater
+                                landscapes in India.
+                            </p>
+
+                            <p>
+                                My work integrates ecology, population
+                                genomics, diet and gut microbiome analyses
+                                with non-invasive approaches to understand
+                                how otter populations respond to ecological
+                                variation and human-modified environments.
+                            </p>
+
+                            <p>
+                                Outside research, I enjoy photography,
+                                dance, music, travelling, hiking and
+                                exploring new places.
+                            </p>
+
+                            <p>
+                                <strong>Research Interests:</strong>
+                                Conservation genomics, molecular ecology,
+                                population genetics, freshwater ecology,
+                                and human-wildlife interactions.
+                            </p>
+
+                            <p>
+                                <strong>Education:</strong>
+                                MRes, Cardiff School of Biosciences,
+                                Wales (2024)
+                            </p>
+
+                            <div class="contact-links">
+
+                                <a
+                                    href="mailto:apoorva.sodhi@cwsindia.org"
+                                >
+                                    Email
+                                </a>
+
+                                <a
+                                    href="https://twitter.com/apoorva_sodhi"
+                                    target="_blank"
+                                >
+                                    Twitter
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ANASWARA -->
+
+                <article class="member-card">
+
+                    <img
+                        class="member-image"
+                        src="https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/anashwara.jpeg"
+                        alt="Anaswara S R"
+                    >
+
+                    <div class="member-info">
+
+                        <h3>
+                            Anaswara S R
+                        </h3>
+
+                        <div class="position">
+                            Collaborator
+                        </div>
+
+                        <div class="research">
+                            Conservation genetics · eDNA ·
+                            Molecular ecology · Field diagnostics
+                        </div>
+
+                        <button
+                            class="profile-button"
+                            onclick="toggleProfile(this)"
+                        >
+                            View Profile
+                        </button>
+
+                    </div>
+
+
+                    <div class="profile-details">
+
+                        <div class="profile-details-inner">
+
+                            <p>
+                                My work with the Wildlife Conservation
+                                Trust focuses on applying molecular
+                                approaches to wildlife conservation.
+                            </p>
+
+                            <p>
+                                I have been involved in developing an
+                                environmental DNA (eDNA)-based approach
+                                for the detection of freshwater turtles.
+                            </p>
+
+                            <p>
+                                I am now focusing on developing a
+                                LAMP-based assay for rapid, field-based
+                                detection, with the aim of making molecular
+                                tools more accessible and practical for
+                                wildlife monitoring and conservation.
+                            </p>
+
+                            <p>
+                                Apart from academics, I enjoy trying new
+                                hobbies and exploring new things.
+                            </p>
+
+                            <p>
+                                <strong>Research Interests:</strong>
+                                Conservation genetics, environmental DNA,
+                                molecular ecology, and field-based
+                                molecular diagnostics.
+                            </p>
+
+                            <p>
+                                <strong>Education:</strong>
+                                MSc in Genomic Science,
+                                Central University of Kerala (2023)
+                            </p>
 
                         </div>
 
@@ -1656,107 +2439,89 @@
 
 
         <!-- =================================================
-             DISSERTATION STUDENTS
+             THESIS & DISSERTATION STUDENTS
         ================================================== -->
 
         <section class="member-section">
 
             <div class="section-title">
-                <h2>Thesis & Dissertation Students</h2>
+
+                <h2>
+                    Thesis & Dissertation Students
+                </h2>
+
             </div>
 
 
             <div class="member-grid">
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Preshtha
+                    </h3>
 
-                        <h3>Preshtha</h3>
-
-                        <div class="position">
-                            Dissertation Student
-                        </div>
-
-                    </div>
+                    <p>
+                        Dissertation Student
+                    </p>
 
                 </article>
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Jyoti Prakash Mohanty
+                    </h3>
 
-                        <h3>Jyoti Prakash Mohanty</h3>
-
-                        <div class="position">
-                            MSc Biotechnology · 2026
-                        </div>
-
-                        <div class="research">
-                            Fakir Mohan University, Balasore
-                        </div>
-
-                    </div>
+                    <p>
+                        MSc Biotechnology, 2026<br>
+                        Fakir Mohan University, Balasore
+                    </p>
 
                 </article>
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Abinash Rudrasankar Sahoo
+                    </h3>
 
-                        <h3>Abinash Rudrasankar Sahoo</h3>
-
-                        <div class="position">
-                            MSc Biotechnology · 2026
-                        </div>
-
-                        <div class="research">
-                            Fakir Mohan University, Balasore
-                        </div>
-
-                    </div>
+                    <p>
+                        MSc Biotechnology, 2026<br>
+                        Fakir Mohan University, Balasore
+                    </p>
 
                 </article>
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Radhika Soni
+                    </h3>
 
-                        <h3>Radhika Soni</h3>
-
-                        <div class="position">
-                            MSc Biotechnology · 2026
-                        </div>
-
-                        <div class="research">
-                            Devi Ahilya Vishwavidyalaya, Indore
-                        </div>
-
-                    </div>
+                    <p>
+                        MSc Biotechnology, 2026<br>
+                        Devi Ahilya Vishwavidyalaya, Indore
+                    </p>
 
                 </article>
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Pallavi B
+                    </h3>
 
-                        <h3>Pallavi B</h3>
-
-                        <div class="position">
-                            MSc Bioinformatics · 2026
-                        </div>
-
-                        <div class="research">
-                            JSS Academy of Higher Education and Research,
-                            Mysuru
-                        </div>
-
-                    </div>
+                    <p>
+                        MSc Bioinformatics, 2026<br>
+                        JSS Academy of Higher Education and Research,
+                        Mysuru
+                    </p>
 
                 </article>
 
@@ -1774,88 +2539,79 @@
         <section class="member-section">
 
             <div class="section-title">
-                <h2>Interns</h2>
+
+                <h2>
+                    Interns
+                </h2>
+
             </div>
 
 
             <div class="member-grid">
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Kushaan
+                    </h3>
 
-                        <h3>Kushaan</h3>
-
-                        <div class="position">
-                            Intern
-                        </div>
-
-                    </div>
+                    <p>
+                        Intern
+                    </p>
 
                 </article>
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Teja
+                    </h3>
 
-                        <h3>Teja</h3>
-
-                        <div class="position">
-                            Biowise Intern · BeST · 2026
-                        </div>
-
-                    </div>
+                    <p>
+                        Biowise Intern · BeST · 2026
+                    </p>
 
                 </article>
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Fathima
+                    </h3>
 
-                        <h3>Fathima</h3>
-
-                        <div class="position">
-                            DISHA Intern · DAE · 2026
-                        </div>
-
-                    </div>
+                    <p>
+                        DISHA Intern · DAE · 2026
+                    </p>
 
                 </article>
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Keerthika Chavali
+                    </h3>
 
-                        <h3>Keerthika Chavali</h3>
-
-                        <div class="position">
-                            INSPIRE-SHE Intern · DST · 2026
-                        </div>
-
-                    </div>
+                    <p>
+                        INSPIRE-SHE Intern · DST · 2026
+                    </p>
 
                 </article>
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Paritosh Sharma
+                    </h3>
 
-                        <h3>Paritosh Sharma</h3>
-
-                        <div class="position">
-                            CSTUP Summer Research Fellow · 2025
-                        </div>
-
-                        <div class="research">
-                            Government of Uttar Pradesh
-                        </div>
-
-                    </div>
+                    <p>
+                        CSTUP Summer Research Fellow · 2025<br>
+                        Government of Uttar Pradesh
+                    </p>
 
                 </article>
 
@@ -1867,104 +2623,58 @@
 
 
         <!-- =================================================
-             OTHER PROJECT STAFF / ALUMNI
+             PAST PROJECT STAFF
         ================================================== -->
 
         <section class="member-section">
 
             <div class="section-title">
-                <h2>Past Project Staff</h2>
+
+                <h2>
+                    Past Project Staff
+                </h2>
+
             </div>
 
 
             <div class="member-grid">
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Meenakshi R
+                    </h3>
 
-                        <h3>Meenakshi R</h3>
-
-                        <div class="position">
-                            Former Project Staff
-                        </div>
-
-                    </div>
+                    <p>
+                        Former Project Staff
+                    </p>
 
                 </article>
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Nithin KA
+                    </h3>
 
-                        <h3>Nithin KA</h3>
-
-                        <div class="position">
-                            Former Project Staff
-                        </div>
-
-                    </div>
+                    <p>
+                        Former Project Staff
+                    </p>
 
                 </article>
 
 
-                <article class="member-card">
+                <article class="simple-card">
 
-                    <div class="member-info">
+                    <h3>
+                        Ramya Roopa S
+                    </h3>
 
-                        <h3>Ramya Roopa S</h3>
-
-                        <div class="position">
-                            Former Project Staff
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             POSTDOCS
-        ================================================== -->
-
-        <section class="member-section">
-
-            <div class="section-title">
-                <h2>Postdocs</h2>
-            </div>
-
-
-            <div class="member-grid">
-
-
-                <article class="member-card">
-
-                    <div class="member-info">
-
-                        <h3>Azhar Rashid Lone</h3>
-
-                        <div class="position">
-                            Postdoctoral Researcher
-                        </div>
-
-                        <div class="contact-links">
-
-                            <a href="https://scholar.google.com/citations?user=wk6gGgMAAAAJ&hl=en"
-                               target="_blank">
-                                Google Scholar
-                            </a>
-
-                        </div>
-
-                    </div>
+                    <p>
+                        Former Project Staff
+                    </p>
 
                 </article>
 
@@ -1982,11 +2692,15 @@
         <section class="member-section">
 
             <div class="section-title">
-                <h2>Past Members</h2>
+
+                <h2>
+                    Past Members
+                </h2>
+
             </div>
 
 
-            <div class="empty-section">
+            <div class="simple-card">
 
                 <p>
                     This section will be updated with former members
@@ -2008,31 +2722,42 @@
 
     <aside class="sidebar">
 
-        <h2>Lab Updates</h2>
+        <h2>
+            Lab Updates
+        </h2>
+
 
         <ul>
+
 
             <li>
                 Sakhi Kundu received financial support and was selected
                 to attend the EMBO Practical Course
-                <strong>"Population genomics: background and tools"</strong>
+                <strong>
+                    "Population genomics: background and tools"
+                </strong>
                 from 15 to 22 June 2026 in Naples, Italy.
             </li>
+
 
             <li>
                 We received the ESEB GEBI for supporting and fostering
                 evolutionary biological research in India.
             </li>
 
+
             <li>
                 Haradhan Ruidas received the IDEA WILD grant for
                 performing fieldwork at Chilika, Odisha.
             </li>
 
+
             <li>
 
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7412476637377871872/"
-                   target="_blank">
+                <a
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7412476637377871872/"
+                    target="_blank"
+                >
 
                     Bramhi Chougule received the TWF RED Grant 2026
                     for the tracking and protection of the Kondana
@@ -2043,10 +2768,12 @@
 
             </li>
 
+
             <li>
                 Haradhan Ruidas received the Graduate Student Research
                 Award for performing fieldwork at Chilika, Odisha.
             </li>
+
 
             <li>
                 We received the Schmidt Sciences AI in Science Global
@@ -2054,16 +2781,19 @@
                 using photographs and machine learning approaches.
             </li>
 
+
             <li>
                 Haradhan Ruidas received the DBT-CTEP Travel Grant to
                 attend and present at the International Congress for
                 Conservation Biology 2025 in Brisbane, Australia.
             </li>
 
+
             <li>
                 Pranav Datar received financial support from EMPSEB30
                 for attendance and presentation.
             </li>
+
 
             <li>
 
@@ -2073,15 +2803,19 @@
 
             </li>
 
+
             <li>
                 We received the ANRF Early Career Grant to study
                 evolution of body size in monitor lizards.
             </li>
 
+
             <li>
 
-                <a href="https://www.thehabitatstrust.org/indian-institute-of-science.php"
-                   target="_blank">
+                <a
+                    href="https://www.thehabitatstrust.org/indian-institute-of-science.php"
+                    target="_blank"
+                >
 
                     We received the THT Conservation Grant 2024 with
                     Umesh Srinivasan lab to study the critically
@@ -2090,6 +2824,7 @@
                 </a>
 
             </li>
+
 
         </ul>
 
@@ -2131,15 +2866,20 @@
 
     function toggleProfile(button) {
 
-        const card = button.closest(".member-card");
-        const details = card.querySelector(".profile-details");
+        const card =
+            button.closest(".member-card");
+
+        const details =
+            card.querySelector(".profile-details");
 
         const isOpen =
             details.style.maxHeight &&
             details.style.maxHeight !== "0px";
 
 
-        /* Close any other open profiles */
+        /*
+         * Close all other profiles
+         */
 
         document
             .querySelectorAll(".profile-details")
@@ -2155,7 +2895,10 @@
                             .querySelector(".profile-button");
 
                     if (otherButton) {
-                        otherButton.textContent = "View Profile";
+
+                        otherButton.textContent =
+                            "View Profile";
+
                     }
 
                 }
@@ -2163,19 +2906,24 @@
             });
 
 
-        /* Toggle selected profile */
+        /*
+         * Open or close selected profile
+         */
 
         if (isOpen) {
 
             details.style.maxHeight = null;
-            button.textContent = "View Profile";
+
+            button.textContent =
+                "View Profile";
 
         } else {
 
             details.style.maxHeight =
                 details.scrollHeight + "px";
 
-            button.textContent = "Hide Profile";
+            button.textContent =
+                "Hide Profile";
 
         }
 

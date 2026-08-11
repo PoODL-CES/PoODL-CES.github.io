@@ -1,0 +1,510 @@
+
+/* =========================================================
+   PoODL GALLERY
+========================================================= */
+
+
+/*
+    ========================================================
+    ADD YOUR PHOTOS HERE
+    ========================================================
+
+    To add a new photograph, copy one of the entries below.
+
+    Example:
+
+    {
+        image: "YOUR RAW GITHUB IMAGE URL",
+        category: "conferences",
+        title: "Conference Name",
+        description: "Location · Year"
+    },
+
+    Categories:
+
+        meet-the-boss
+        conferences
+        trips
+        lab-dinners
+        shenanigans
+        wet-lab
+        dry-lab
+
+    You can add as many photographs as you want.
+*/
+
+
+const galleryPhotos = [
+
+    /*
+    ========================================================
+    MEET THE BOSS
+    ========================================================
+    */
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/meet-the-boss/example.jpg",
+        category: "meet-the-boss",
+        title: "Meet the Boss",
+        description: "PoODL Laboratory"
+    },
+
+
+    /*
+    ========================================================
+    CONFERENCES
+    ========================================================
+    */
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/conferences/example.jpg",
+        category: "conferences",
+        title: "Conference",
+        description: "PoODL · 2026"
+    },
+
+
+    /*
+    ========================================================
+    POODL ON A TRIP
+    ========================================================
+    */
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/poodl-on-a-trip/example.jpg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: "Field trip · 2026"
+    },
+
+
+    /*
+    ========================================================
+    LAB DINNERS
+    ========================================================
+    */
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/lab-dinners/example.jpg",
+        category: "lab-dinners",
+        title: "Lab Dinner",
+        description: "PoODL · 2026"
+    },
+
+
+    /*
+    ========================================================
+    SHENANIGANS
+    ========================================================
+    */
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/shenanigans/example.jpg",
+        category: "shenanigans",
+        title: "Lab Shenanigans",
+        description: "PoODL"
+    },
+
+
+    /*
+    ========================================================
+    DISCOVER WET LAB
+    ========================================================
+    */
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/wet-lab/example.jpg",
+        category: "wet-lab",
+        title: "Discover Wet Lab",
+        description: "Molecular Biology · PoODL"
+    },
+
+
+    /*
+    ========================================================
+    DISCOVER DRY LAB
+    ========================================================
+    */
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/dry-lab/example.jpg",
+        category: "dry-lab",
+        title: "Discover Dry Lab",
+        description: "Bioinformatics · PoODL"
+    }
+
+];
+
+
+/* =========================================================
+   ELEMENTS
+========================================================= */
+
+const photoGrid = document.getElementById("photo-grid");
+
+const photoCount = document.getElementById("photo-count");
+
+const emptyGallery = document.getElementById("empty-gallery");
+
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+
+const lightbox =
+    document.getElementById("lightbox");
+
+const lightboxImage =
+    document.getElementById("lightbox-image");
+
+const lightboxTitle =
+    document.getElementById("lightbox-title");
+
+const lightboxDescription =
+    document.getElementById("lightbox-description");
+
+const lightboxClose =
+    document.getElementById("lightbox-close");
+
+const lightboxPrev =
+    document.getElementById("lightbox-prev");
+
+const lightboxNext =
+    document.getElementById("lightbox-next");
+
+
+/* =========================================================
+   CURRENT STATE
+========================================================= */
+
+let currentFilter = "all";
+
+let visiblePhotos = [];
+
+let currentPhotoIndex = 0;
+
+
+/* =========================================================
+   DISPLAY PHOTOS
+========================================================= */
+
+function displayPhotos() {
+
+    photoGrid.innerHTML = "";
+
+    if (currentFilter === "all") {
+
+        visiblePhotos = galleryPhotos;
+
+    } else {
+
+        visiblePhotos =
+            galleryPhotos.filter(
+                photo =>
+                    photo.category === currentFilter
+            );
+
+    }
+
+
+    photoCount.textContent =
+        `${visiblePhotos.length} ${
+            visiblePhotos.length === 1
+                ? "photo"
+                : "photos"
+        }`;
+
+
+    if (visiblePhotos.length === 0) {
+
+        emptyGallery.style.display = "block";
+
+        return;
+
+    }
+
+
+    emptyGallery.style.display = "none";
+
+
+    visiblePhotos.forEach(
+        (photo, index) => {
+
+            const card =
+                document.createElement("article");
+
+            card.className = "photo-card";
+
+
+            card.innerHTML = `
+
+                <img
+                    src="${photo.image}"
+                    alt="${photo.title}"
+                    loading="lazy"
+                >
+
+                <div class="photo-overlay">
+
+                    <h3>
+                        ${photo.title}
+                    </h3>
+
+                    <p>
+                        ${photo.description}
+                    </p>
+
+                </div>
+
+            `;
+
+
+            card.addEventListener(
+                "click",
+                () => openLightbox(index)
+            );
+
+
+            photoGrid.appendChild(card);
+
+        }
+    );
+
+}
+
+
+/* =========================================================
+   FILTERING
+========================================================= */
+
+filterButtons.forEach(
+    button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                filterButtons.forEach(
+                    btn =>
+                        btn.classList.remove("active")
+                );
+
+
+                button.classList.add("active");
+
+
+                currentFilter =
+                    button.dataset.filter;
+
+
+                displayPhotos();
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================================
+   OPEN LIGHTBOX
+========================================================= */
+
+function openLightbox(index) {
+
+    currentPhotoIndex = index;
+
+    updateLightbox();
+
+    lightbox.classList.add("open");
+
+    lightbox.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+/* =========================================================
+   UPDATE LIGHTBOX
+========================================================= */
+
+function updateLightbox() {
+
+    const photo =
+        visiblePhotos[currentPhotoIndex];
+
+
+    if (!photo) {
+        return;
+    }
+
+
+    lightboxImage.src =
+        photo.image;
+
+    lightboxImage.alt =
+        photo.title;
+
+    lightboxTitle.textContent =
+        photo.title;
+
+    lightboxDescription.textContent =
+        photo.description;
+
+}
+
+
+/* =========================================================
+   CLOSE LIGHTBOX
+========================================================= */
+
+function closeLightbox() {
+
+    lightbox.classList.remove("open");
+
+    lightbox.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    document.body.style.overflow = "";
+
+}
+
+
+/* =========================================================
+   NEXT PHOTO
+========================================================= */
+
+function nextPhoto() {
+
+    if (visiblePhotos.length === 0) {
+        return;
+    }
+
+
+    currentPhotoIndex =
+        (currentPhotoIndex + 1)
+        % visiblePhotos.length;
+
+
+    updateLightbox();
+
+}
+
+
+/* =========================================================
+   PREVIOUS PHOTO
+========================================================= */
+
+function previousPhoto() {
+
+    if (visiblePhotos.length === 0) {
+        return;
+    }
+
+
+    currentPhotoIndex =
+        (
+            currentPhotoIndex
+            - 1
+            + visiblePhotos.length
+        )
+        % visiblePhotos.length;
+
+
+    updateLightbox();
+
+}
+
+
+/* =========================================================
+   BUTTON EVENTS
+========================================================= */
+
+lightboxClose.addEventListener(
+    "click",
+    closeLightbox
+);
+
+
+lightboxNext.addEventListener(
+    "click",
+    nextPhoto
+);
+
+
+lightboxPrev.addEventListener(
+    "click",
+    previousPhoto
+);
+
+
+/* =========================================================
+   CLOSE BY CLICKING BACKGROUND
+========================================================= */
+
+lightbox.addEventListener(
+    "click",
+    event => {
+
+        if (event.target === lightbox) {
+
+            closeLightbox();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   KEYBOARD CONTROLS
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            !lightbox.classList.contains("open")
+        ) {
+
+            return;
+
+        }
+
+
+        if (event.key === "Escape") {
+
+            closeLightbox();
+
+        }
+
+
+        if (event.key === "ArrowRight") {
+
+            nextPhoto();
+
+        }
+
+
+        if (event.key === "ArrowLeft") {
+
+            previousPhoto();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+displayPhotos();
+

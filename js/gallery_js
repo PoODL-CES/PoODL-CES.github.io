@@ -2,12 +2,14 @@
    PoODL GALLERY
 ========================================================= */
 
+
 /*
     ========================================================
     ADD YOUR PHOTOS HERE
     ========================================================
 
-    To add a new photograph, copy one of the entries below.
+    To add another photograph, simply copy an entry and
+    change the image URL, title and description.
 
     Categories:
 
@@ -18,16 +20,14 @@
         shenanigans
         wet-lab
         dry-lab
-
-    You can add as many photographs as you want.
 */
 
 
 const galleryPhotos = [
 
-    /* ========================================================
+    /* =====================================================
        POODL ON A TRIP
-    ======================================================== */
+    ===================================================== */
 
     {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_on_a_trip1.jpeg",
@@ -71,14 +71,11 @@ const galleryPhotos = [
    ELEMENTS
 ========================================================= */
 
-const photoGrid =
-    document.getElementById("photo-grid");
+const photoGrid = document.getElementById("photo-grid");
 
-const photoCount =
-    document.getElementById("photo-count");
+const photoCount = document.getElementById("photo-count");
 
-const emptyGallery =
-    document.getElementById("empty-gallery");
+const emptyGallery = document.getElementById("empty-gallery");
 
 const filterButtons =
     document.querySelectorAll(".filter-btn");
@@ -125,21 +122,21 @@ function displayPhotos() {
 
     photoGrid.innerHTML = "";
 
-
     if (currentFilter === "all") {
 
         visiblePhotos = galleryPhotos;
 
     } else {
 
-        visiblePhotos =
-            galleryPhotos.filter(
-                photo =>
-                    photo.category === currentFilter
-            );
+        visiblePhotos = galleryPhotos.filter(
+            photo =>
+                photo.category === currentFilter
+        );
 
     }
 
+
+    /* Photo count */
 
     photoCount.textContent =
         `${visiblePhotos.length} ${
@@ -148,6 +145,8 @@ function displayPhotos() {
                 : "photos"
         }`;
 
+
+    /* No photos */
 
     if (visiblePhotos.length === 0) {
 
@@ -160,6 +159,8 @@ function displayPhotos() {
 
     emptyGallery.style.display = "none";
 
+
+    /* Create photo cards */
 
     visiblePhotos.forEach(
         (photo, index) => {

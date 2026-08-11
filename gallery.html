@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="PoODL Gallery — photographs, field trips, conferences, laboratory life and adventures from the Population and Organism Diversity Laboratory.">
+
+    <title>Gallery | Population and Organism Diversity Laboratory</title>
+
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+
+
+<body>
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+
+    <header class="gallery-header">
+
+        <div class="header-content">
+
+            <p class="eyebrow">
+                Population and Organism Diversity Laboratory
+            </p>
+
+            <h1>
+                PoODL Gallery
+            </h1>
+
+            <p class="header-description">
+                Life, science & adventures at PoODL
+
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <nav class="gallery-nav">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="members.html">
+            Members
+        </a>
+
+        <a href="gallery.html" class="active">
+            Gallery
+        </a>
+
+        <a href="research.html">
+            Research
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <!-- =========================================================
+         MAIN GALLERY
+    ========================================================== -->
+
+    <main class="gallery-container">
+
+
+        <!-- =====================================================
+             INTRODUCTION
+        ====================================================== -->
+
+        <section class="gallery-intro">
+
+            <h2>
+                Life at PoODL
+            </h2>
+
+            <p>
+                From field expeditions and conferences to laboratory
+                experiments, celebrations and everyday lab
+                shenanigans, this is a collection of moments from
+                the Population and Organism Diversity Laboratory.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             CATEGORY FILTERS
+        ====================================================== -->
+
+        <section class="gallery-filters">
+
+            <button class="filter-btn active" data-filter="all">
+                All Photos
+            </button>
+
+            <button class="filter-btn" data-filter="meet-the-boss">
+                Meet the Boss
+            </button>
+
+            <button class="filter-btn" data-filter="conferences">
+                Conferences
+            </button>
+
+            <button class="filter-btn" data-filter="trips">
+                PoODL on a Trip
+            </button>
+
+            <button class="filter-btn" data-filter="lab-dinners">
+                Lab Dinners
+            </button>
+
+            <button class="filter-btn" data-filter="shenanigans">
+                Shenanigans
+            </button>
+
+            <button class="filter-btn" data-filter="wet-lab">
+                Discover Wet Lab
+            </button>
+
+            <button class="filter-btn" data-filter="dry-lab">
+                Discover Dry Lab
+            </button>
+
+        </section>
+
+
+        <!-- =====================================================
+             PHOTO COUNT
+        ====================================================== -->
+
+        <div class="gallery-status">
+
+            <span id="photo-count">
+                0 photos
+            </span>
+
+        </div>
+
+
+        <!-- =====================================================
+             PHOTO GRID
+        ====================================================== -->
+
+        <section
+            class="photo-grid"
+            id="photo-grid"
+            aria-live="polite">
+        </section>
+
+
+        <!-- =====================================================
+             EMPTY MESSAGE
+        ====================================================== -->
+
+        <div class="empty-gallery" id="empty-gallery">
+
+            <h3>
+                No photos here yet
+            </h3>
+
+            <p>
+                Photos from this category will appear here soon.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================================
+         LIGHTBOX
+    ========================================================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        aria-hidden="true">
+
+        <button
+            class="lightbox-close"
+            id="lightbox-close"
+            aria-label="Close photo">
+            &times;
+        </button>
+
+
+        <button
+            class="lightbox-prev"
+            id="lightbox-prev"
+            aria-label="Previous photo">
+            &#10094;
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightbox-image"
+                src=""
+                alt="">
+
+            <div class="lightbox-caption">
+
+                <h3 id="lightbox-title">
+                </h3>
+
+                <p id="lightbox-description">
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="lightbox-next"
+            id="lightbox-next"
+            aria-label="Next photo">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="gallery-footer">
+
+        <p>
+            &copy; 2024 Population and Organism Diversity Laboratory.
+            All rights reserved.
+        </p>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </footer>
+
+
+    <!-- Gallery JavaScript -->
+    <script src="js/gallery.js"></script>
+
+</body>
+
+</html>
+

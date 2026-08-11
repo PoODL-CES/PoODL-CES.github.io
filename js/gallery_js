@@ -1,8 +1,6 @@
-
 /* =========================================================
    PoODL GALLERY
 ========================================================= */
-
 
 /*
     ========================================================
@@ -10,15 +8,6 @@
     ========================================================
 
     To add a new photograph, copy one of the entries below.
-
-    Example:
-
-    {
-        image: "YOUR RAW GITHUB IMAGE URL",
-        category: "conferences",
-        title: "Conference Name",
-        description: "Location · Year"
-    },
 
     Categories:
 
@@ -36,101 +25,43 @@
 
 const galleryPhotos = [
 
-    /*
-    ========================================================
-    MEET THE BOSS
-    ========================================================
-    */
+    /* ========================================================
+       POODL ON A TRIP
+    ======================================================== */
 
     {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/meet-the-boss/example.jpg",
-        category: "meet-the-boss",
-        title: "Meet the Boss",
-        description: "PoODL Laboratory"
-    },
-
-
-    /*
-    ========================================================
-    CONFERENCES
-    ========================================================
-    */
-
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/conferences/example.jpg",
-        category: "conferences",
-        title: "Conference",
-        description: "PoODL · 2026"
-    },
-
-
-    /*
-    ========================================================
-    POODL ON A TRIP
-    ========================================================
-    */
-
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/poodl-on-a-trip/example.jpg",
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_on_a_trip1.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
-        description: "Field trip · 2026"
-    },
-
-
-    /*
-    ========================================================
-    LAB DINNERS
-    ========================================================
-    */
-
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/lab-dinners/example.jpg",
-        category: "lab-dinners",
-        title: "Lab Dinner",
         description: "PoODL · 2026"
     },
 
-
-    /*
-    ========================================================
-    SHENANIGANS
-    ========================================================
-    */
-
     {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/shenanigans/example.jpg",
-        category: "shenanigans",
-        title: "Lab Shenanigans",
-        description: "PoODL"
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_on_a_trip2.jpeg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: "PoODL · 2026"
     },
 
-
-    /*
-    ========================================================
-    DISCOVER WET LAB
-    ========================================================
-    */
-
     {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/wet-lab/example.jpg",
-        category: "wet-lab",
-        title: "Discover Wet Lab",
-        description: "Molecular Biology · PoODL"
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_trip3.jpeg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: "PoODL · 2026"
     },
 
-
-    /*
-    ========================================================
-    DISCOVER DRY LAB
-    ========================================================
-    */
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_trip4.jpeg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: "PoODL · 2026"
+    },
 
     {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/gallery/dry-lab/example.jpg",
-        category: "dry-lab",
-        title: "Discover Dry Lab",
-        description: "Bioinformatics · PoODL"
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_trip5.jpeg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: "PoODL · 2026"
     }
 
 ];
@@ -140,11 +71,14 @@ const galleryPhotos = [
    ELEMENTS
 ========================================================= */
 
-const photoGrid = document.getElementById("photo-grid");
+const photoGrid =
+    document.getElementById("photo-grid");
 
-const photoCount = document.getElementById("photo-count");
+const photoCount =
+    document.getElementById("photo-count");
 
-const emptyGallery = document.getElementById("empty-gallery");
+const emptyGallery =
+    document.getElementById("empty-gallery");
 
 const filterButtons =
     document.querySelectorAll(".filter-btn");
@@ -190,6 +124,7 @@ let currentPhotoIndex = 0;
 function displayPhotos() {
 
     photoGrid.innerHTML = "";
+
 
     if (currentFilter === "all") {
 
@@ -409,8 +344,7 @@ function previousPhoto() {
 
     currentPhotoIndex =
         (
-            currentPhotoIndex
-            - 1
+            currentPhotoIndex - 1
             + visiblePhotos.length
         )
         % visiblePhotos.length;
@@ -507,4 +441,3 @@ document.addEventListener(
 ========================================================= */
 
 displayPhotos();
-

@@ -14,7 +14,7 @@
     Categories:
 
         meet-the-boss
-        conferences
+        workshops
         trips
         lab-dinners
         shenanigans
@@ -153,6 +153,13 @@ const galleryPhotos = [
     }
 
 ];
+
+
+    /* =====================================================
+     WORKSHOPS
+    ===================================================== */
+
+
 
 /* =========================================================
    ELEMENTS

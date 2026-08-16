@@ -150,14 +150,37 @@ const galleryPhotos = [
         category: "meet-the-boss",
         title: "Meet the Boss",
         description: "Getting trophy for running away"
-    }
-
-];
+    
+    },
 
 
     /* =====================================================
-     WORKSHOPS
+       WORKSHOPS
     ===================================================== */
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop1.jpeg",
+        category: "workshops",
+        title: "Wildlife Genomics Workshop4",
+        description: "10 to 14 August 2026 and 19 to 21 August 2026, Wildlife genomics IV workshop at Genomics@Pwani 2026, Pwani University, Kilifi, Kenya"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop3.jpeg",
+        category: "workshops",
+        title: "Next-Generation Sequencing & Clinical Genetics Conference",
+        description: "Next-Generation Sequencing & Clinical Genetics Conference at Yenepoya Medical College, Deralakatte, Mangalore, Karnataka"
+    },
+
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop5.jpeg",
+        category: "workshops",
+        title: "23 April to 25 April 2025, Population genomics workshop at GIAS 2025, NCBS, Bangalore, India",
+        description: "PoODL · Workshop"
+    }
+
+];
 
 
 

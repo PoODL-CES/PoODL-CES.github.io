@@ -33,39 +33,126 @@ const galleryPhotos = [
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_on_a_trip1.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
-        description: "PoODL · 2026"
+        description: "We can go to any extent for a lab picture"
+    },
+
+   {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip1.jpeg",
+        category: "trips",
+        title: "PoODL members trek26",
+        description: "Nandi_trek 2026"
     },
 
     {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_on_a_trip2.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
-        description: "PoODL · 2026"
+        description: "People look happy because we had the tastiest cheesecake"
     },
 
     {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_trip3.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
-        description: "PoODL · 2026"
+        description: "Trying to look at the black-rumped flameback"
     },
 
     {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_trip4.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
-        description: "PoODL · 2026"
+        description: "Lab at Coorg"
     },
 
     {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodl_trip5.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
-        description: "PoODL · 2026"
+        description: "Winter came for us early"
+    },
+   
+{
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip2.jpeg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: "Trip where Sakhi came with us"
+    },
+
+   {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip3.jpeg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: "Trip where Sakhi came with us2"
+    },
+
+   {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip4.jpeg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: "Trip where Sakhi came with us3"
+    },
+
+   {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip5.jpeg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: "Went for the view"
+    },
+
+   {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip6.jpeg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: "Kaveri backwaters"
+    },
+
+   {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip7.jpeg",
+        category: "trips",
+        title: "PoODL on a Trip",
+        description: " Beautiful Mangalore beach"
+    },
+
+    /* =====================================================
+       MEET THE BOSS
+    ===================================================== */
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/meet_the_boss/boss1.jpeg",
+        category: "meet-the-boss",
+        title: "Meet the Boss",
+        description: "Anubhab when he takes the workshops seriously"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/meet_the_boss/boss2.jpeg",
+        category: "meet-the-boss",
+        title: "Meet the Boss",
+        description: "choosing between love and life"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/meet_the_boss/boss3.jpeg",
+        category: "meet-the-boss",
+        title: "Meet the Boss",
+        description: "After he has done finishing the admin stuff"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/meet_the_boss/boss4.jpeg",
+        category: "meet-the-boss",
+        title: "Meet the Boss",
+        description: "Taking the trip's mandatory sunset pic"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/meet_the_boss/boss5.jpeg",
+        category: "meet-the-boss",
+        title: "Meet the Boss",
+        description: "Getting trophy for running away"
     }
 
 ];
-
 
 /* =========================================================
    ELEMENTS

@@ -198,7 +198,7 @@ const galleryPhotos = [
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani2.jpeg",
         category: "shenanigans",
         title: "Madam ji",
-        description: "Proof that madam ji works"
+        description: "hardcore analysis"
     },
 
     {

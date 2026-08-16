@@ -153,84 +153,83 @@ const galleryPhotos = [
     
     },
 
+/* =====================================================
+   WORKSHOPS
+===================================================== */
 
-    /* =====================================================
-       WORKSHOPS
-    ===================================================== */
+{
+    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop1.jpeg",
+    category: "workshops",
+    title: "Wildlife Genomics Workshop 4",
+    description: "10 to 14 August 2026 and 19 to 21 August 2026, Wildlife Genomics IV Workshop at Genomics@Pwani 2026, Pwani University, Kilifi, Kenya"
+},
 
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop1.jpeg",
-        category: "workshops",
-        title: "Wildlife Genomics Workshop4",
-        description: "10 to 14 August 2026 and 19 to 21 August 2026, Wildlife genomics IV workshop at Genomics@Pwani 2026, Pwani University, Kilifi, Kenya"
-    },
+{
+    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop3.jpeg",
+    category: "workshops",
+    title: "Next-Generation Sequencing & Clinical Genetics Conference",
+    description: "Next-Generation Sequencing & Clinical Genetics Conference at Yenepoya Medical College, Deralakatte, Mangalore, Karnataka"
+},
 
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop3.jpeg",
-        category: "workshops",
-        title: "Next-Generation Sequencing & Clinical Genetics Conference",
-        description: "Next-Generation Sequencing & Clinical Genetics Conference at Yenepoya Medical College, Deralakatte, Mangalore, Karnataka"
-    },
+{
+    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop5.jpeg",
+    category: "workshops",
+    title: "Population Genomics Workshop",
+    description: "23–25 April 2025 · GIAS 2025 · NCBS, Bangalore, India"
+},
 
+/* =====================================================
+   SHENANIGANS
+===================================================== */
 
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop5.jpeg",
-        category: "workshops",
-        title: "23 April to 25 April 2025, Population genomics workshop at GIAS 2025, NCBS, Bangalore, India",
-        description: "PoODL · Workshop"
-    }
+{
+    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/labpic.jpeg",
+    category: "shenanigans",
+    title: "Lab picture to show that we promote extracurricular activity as well",
+    description: "Lab @ SCCS 2025"
+},
 
-     /* =====================================================
-       SHENANIGANS
-    ===================================================== */
+{
+    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani1.jpeg",
+    category: "shenanigans",
+    title: "We got bribed",
+    description: "Who said you can't bribe us with some chilled?"
+},
 
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/labpic.jpeg",
-        category: "shenanigans",
-        title: "Lab picture to show that we promote extra curricular activity as well",
-        description: "Lab @SCCS 2025"
-    },
+{
+    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani2.jpeg",
+    category: "shenanigans",
+    title: "Madam ji",
+    description: "Proof that madam ji works"
+},
 
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani1.jpeg",
-        category: "shenanigans",
-        title: "We got bribed",
-        description: "Who said you can't bribe us with some chilled?"
-    },
+{
+    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani3.jpeg",
+    category: "shenanigans",
+    title: "I got shot",
+    description: "When you are doing real analysis"
+},
 
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani2.jpeg",
-        category: "shenanigans",
-        title: "Madam ji",
-        description: "Proof that madam ji works"
-    },
-       {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani3.jpeg",
-        category: "shenanigans",
-        title: "I got shot",
-        description: "When you are doing real analysis"
-    },
+{
+    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani4.jpeg",
+    category: "shenanigans",
+    title: "You can't tell who is more sad",
+    description: "Anusrita's forced to share her food"
+},
 
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani4.jpeg",
-        category: "shenanigans",
-        title: "You can't tell who is more sad ",
-        description: "Anusrita's forced to share her food"
-    },
+{
+    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani5.jpeg",
+    category: "shenanigans",
+    title: "Artist corner",
+    description: "We are blessed to have Ayushi with us"
+},
 
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani5.jpeg",
-        category: "shenanigans",
-        title: "Artist corner",
-        description: "We are blessed to have Ayushi with us"
-    },
-
-    {
-        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani6.jpeg",
-        category: "shenanigans",
-        title: "Kids corner",
-        description: "Pranav Harry and Nithin showing bags full of chocolates to lure you into joining the lab"
-    }
+{
+    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani6.jpeg",
+    category: "shenanigans",
+    title: "Kids corner",
+    description: "Pranav, Harry and Nithin showing bags full of chocolates to lure you into joining the lab"
+}
 
 ];
 

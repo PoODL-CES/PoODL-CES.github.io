@@ -2,14 +2,10 @@
    PoODL GALLERY
 ========================================================= */
 
-
 /*
     ========================================================
     ADD YOUR PHOTOS HERE
     ========================================================
-
-    To add another photograph, simply copy an entry and
-    change the image URL, title and description.
 
     Categories:
 
@@ -36,11 +32,11 @@ const galleryPhotos = [
         description: "We can go to any extent for a lab picture"
     },
 
-   {
+    {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip1.jpeg",
         category: "trips",
         title: "PoODL members trek26",
-        description: "Nandi_trek 2026"
+        description: "Nandi trek 2026"
     },
 
     {
@@ -70,48 +66,49 @@ const galleryPhotos = [
         title: "PoODL on a Trip",
         description: "Winter came for us early"
     },
-   
-{
+
+    {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip2.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
         description: "Trip where Sakhi came with us"
     },
 
-   {
+    {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip3.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
-        description: "Trip where Sakhi came with us2"
+        description: "Trip where Sakhi came with us 2"
     },
 
-   {
+    {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip4.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
-        description: "Trip where Sakhi came with us3"
+        description: "Trip where Sakhi came with us 3"
     },
 
-   {
+    {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip5.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
         description: "Went for the view"
     },
 
-   {
+    {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip6.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
         description: "Kaveri backwaters"
     },
 
-   {
+    {
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/poodl_on_a_trip/poodltrip7.jpeg",
         category: "trips",
         title: "PoODL on a Trip",
-        description: " Beautiful Mangalore beach"
+        description: "Beautiful Mangalore beach"
     },
+
 
     /* =====================================================
        MEET THE BOSS
@@ -128,7 +125,7 @@ const galleryPhotos = [
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/meet_the_boss/boss2.jpeg",
         category: "meet-the-boss",
         title: "Meet the Boss",
-        description: "choosing between love and life"
+        description: "Choosing between love and life"
     },
 
     {
@@ -150,89 +147,89 @@ const galleryPhotos = [
         category: "meet-the-boss",
         title: "Meet the Boss",
         description: "Getting a trophy for running away"
-    
     },
 
-/* =====================================================
-   WORKSHOPS
-===================================================== */
 
-{
-    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop1.jpeg",
-    category: "workshops",
-    title: "Wildlife Genomics Workshop 4",
-    description: "10 to 14 August 2026 and 19 to 21 August 2026, Wildlife Genomics IV Workshop at Genomics@Pwani 2026, Pwani University, Kilifi, Kenya"
-},
+    /* =====================================================
+       WORKSHOPS
+    ===================================================== */
 
-{
-    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop3.jpeg",
-    category: "workshops",
-    title: "Next-Generation Sequencing & Clinical Genetics Conference",
-    description: "Next-Generation Sequencing & Clinical Genetics Conference at Yenepoya Medical College, Deralakatte, Mangalore, Karnataka"
-},
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop1.jpeg",
+        category: "workshops",
+        title: "Wildlife Genomics Workshop 4",
+        description: "10 to 14 August 2026 and 19 to 21 August 2026 · Wildlife Genomics IV Workshop at Genomics @Pwani 2026 · Pwani University, Kilifi, Kenya"
+    },
 
-{
-    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop5.jpeg",
-    category: "workshops",
-    title: "Population Genomics Workshop",
-    description: "23–25 April 2025 · GIAS 2025 · NCBS, Bangalore, India"
-},
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop3.jpeg",
+        category: "workshops",
+        title: "Next-Generation Sequencing & Clinical Genetics Conference",
+        description: "Yenepoya Medical College, Deralakatte, Mangalore, Karnataka"
+    },
 
-/* =====================================================
-   SHENANIGANS
-===================================================== */
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/workshops/workshop5.jpeg",
+        category: "workshops",
+        title: "Population Genomics Workshop",
+        description: "23–25 April 2025 · GIAS 2025 · NCBS, Bangalore, India"
+    },
 
-{
-    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/labpic.jpeg",
-    category: "shenanigans",
-    title: "Lab picture to show that we promote extracurricular activity as well",
-    description: "Lab @ SCCS 2025"
-},
 
-{
-    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani1.jpeg",
-    category: "shenanigans",
-    title: "We got bribed",
-    description: "Who said you can't bribe us with some chilled?"
-},
+    /* =====================================================
+       SHENANIGANS
+    ===================================================== */
 
-{
-    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani2.jpeg",
-    category: "shenanigans",
-    title: "Madam ji",
-    description: "Proof that madam ji works"
-},
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/labpic.jpeg",
+        category: "shenanigans",
+        title: "Lab picture to show that we promote extracurricular activity as well",
+        description: "Lab @ SCCS 2025"
+    },
 
-{
-    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani3.jpeg",
-    category: "shenanigans",
-    title: "I got shot",
-    description: "When you are doing real analysis"
-},
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani1.jpeg",
+        category: "shenanigans",
+        title: "We got bribed",
+        description: "Who said you can't bribe us with some chilled?"
+    },
 
-{
-    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani4.jpeg",
-    category: "shenanigans",
-    title: "You can't tell who is more sad",
-    description: "Anusrita's forced to share her food"
-},
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani2.jpeg",
+        category: "shenanigans",
+        title: "Madam ji",
+        description: "Proof that madam ji works"
+    },
 
-{
-    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani5.jpeg",
-    category: "shenanigans",
-    title: "Artist corner",
-    description: "We are blessed to have Ayushi with us"
-},
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani3.jpeg",
+        category: "shenanigans",
+        title: "I got shot",
+        description: "When you are doing real analysis"
+    },
 
-{
-    image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani6.jpeg",
-    category: "shenanigans",
-    title: "Kids corner",
-    description: "Pranav, Harry and Nithin showing bags full of chocolates to lure you into joining the lab"
-}
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani4.jpeg",
+        category: "shenanigans",
+        title: "You can't tell who is more sad",
+        description: "Anusrita's forced to share her food"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani5.jpeg",
+        category: "shenanigans",
+        title: "Artist corner",
+        description: "We are blessed to have Ayushi with us"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani6.jpeg",
+        category: "shenanigans",
+        title: "Kids corner",
+        description: "Pranav, Harry and Nithin showing bags full of chocolates to lure you into joining the lab"
+    }
 
 ];
-
 
 
 /* =========================================================
@@ -290,6 +287,9 @@ function displayPhotos() {
 
     photoGrid.innerHTML = "";
 
+
+    /* Filter photos */
+
     if (currentFilter === "all") {
 
         visiblePhotos = galleryPhotos;
@@ -297,8 +297,7 @@ function displayPhotos() {
     } else {
 
         visiblePhotos = galleryPhotos.filter(
-            photo =>
-                photo.category === currentFilter
+            photo => photo.category === currentFilter
         );
 
     }

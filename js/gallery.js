@@ -180,6 +180,58 @@ const galleryPhotos = [
         description: "PoODL · Workshop"
     }
 
+     /* =====================================================
+       SHENANIGANS
+    ===================================================== */
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/labpic.jpeg",
+        category: "shenanigans",
+        title: "Lab picture to show that we promote extra curricular activity as well",
+        description: "Lab @SCCS 2025"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani1.jpeg",
+        category: "shenanigans",
+        title: "We got bribed",
+        description: "Who said you can't bribe us with some chilled?"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani2.jpeg",
+        category: "shenanigans",
+        title: "Madam ji",
+        description: "Proof that madam ji works"
+    },
+       {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani3.jpeg",
+        category: "shenanigans",
+        title: "I got shot",
+        description: "When you are doing real analysis"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani4.jpeg",
+        category: "shenanigans",
+        title: "You can't tell who is more sad ",
+        description: "Anusrita's forced to share her food"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani5.jpeg",
+        category: "shenanigans",
+        title: "Artist corner",
+        description: "We are blessed to have Ayushi with us"
+    },
+
+    {
+        image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/shenanigans/shenani6.jpeg",
+        category: "shenanigans",
+        title: "Kids corner",
+        description: "Pranav Harry and Nithin showing bags full of chocolates to lure you into joining the lab"
+    }
+
 ];
 
 

@@ -149,7 +149,7 @@ const galleryPhotos = [
         image: "https://raw.githubusercontent.com/PoODL-CES/PoODL-CES.github.io/main/meet_the_boss/boss5.jpeg",
         category: "meet-the-boss",
         title: "Meet the Boss",
-        description: "Getting trophy for running away"
+        description: "Getting a trophy for running away"
     
     },
 
